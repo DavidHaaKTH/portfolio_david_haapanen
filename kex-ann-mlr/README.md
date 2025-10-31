@@ -1,7 +1,7 @@
 # Forecasting Energy Recovery in the EU using Artificial Neural Networks
 
 **Typ:** Kandidatexamensarbete (KTH, 2024)  
-**Roll:** Självständigt arbete – ansvarade för hela projektet (modellering, analys och rapport).  
+**Roll:** Självständigt arbete – ansvarade för hela projektet med projektpartner (datainsamling, modellering, analys och rapport).  
 **Språk:** MATLAB  
 
 ---
