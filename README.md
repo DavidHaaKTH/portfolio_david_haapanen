@@ -13,7 +13,7 @@ Varje projekt innehåller en kort beskrivning av syfte, metod, lärdomar och min
 
 | Projekt | Kort beskrivning |
 |----------|------------------|
-| [**Forecasting Energy Recovery using ANN**](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera potentiel återvinnings energi från avfall i EU. |
+| [**Forecasting Energy Recovery using ANN**](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
 | [**Heart Failure Classification**](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
 | [**Optimization of Aircraft Spare Parts**](./system-engineering-lp) | Optimeringsmodell (LP + DP) för reservdelsallokering och kostnads–nytta-analys. |
 | [**SMC & MCMC Methods**](./smc-mcmc-methods) | Probabilistiska metoder för sekventiell spårning och bayesianska posteriorer. |
