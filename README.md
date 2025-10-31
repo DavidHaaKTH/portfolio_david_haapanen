@@ -11,11 +11,7 @@ Varje projekt innehåller en kort beskrivning av syfte, metod, lärdomar och min
 
 ## Projektöversikt
 
-Nedan följer utvalda projekt som visar min erfarenhet av **maskininlärning, riskanalys och industriell optimering**, både i kursform och i samarbete med industriella aktörer.
-
-**Tillämpade projekt och kursarbeten inom maskininlärning, riskanalys och optimering.**
-
-
+Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, riskanalys och optimering**, både i kursform och i samarbete med industriella aktörer.
 
 | Projekt | Kort beskrivning |
 |----------|------------------|
