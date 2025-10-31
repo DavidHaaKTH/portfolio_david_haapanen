@@ -32,6 +32,5 @@ Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, ri
 ---
 
 **Kontakt**
-- [LinkedIn](https://www.linkedin.com/in/david-haapanen-b48b47211)  
+- [LinkedIn](https://www.linkedin.com/in/david-haapanen-b48b47211)
 - [E-post](mailto:davidhaa@kth.se)
-
