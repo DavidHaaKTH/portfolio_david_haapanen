@@ -1,6 +1,6 @@
 # Heart Failure Classification using Machine Learning
 
-**Typ:** Kursprojekt inom maskininlärning (KTH, 2024)  
+**Typ:** Kursprojekt inom maskininlärning (KTH, 2025)  
 **Roll:** Grupparbete – jag ansvarade för **databehandling, modellträning och utvärdering**.  
 **Språk:** Python  
 
