@@ -11,8 +11,10 @@ Varje projekt innehåller en kort beskrivning av syfte, metod, lärdomar och min
 
 ## Projektöversikt
 
+
 | Projekt | Kort beskrivning |
 |----------|------------------|
+| [**Insurance Pricing Model (If Insurance)**](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
 | [**Forecasting Energy Recovery using ANN**](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
 | [**Heart Failure Classification**](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
 | [**Optimization of Aircraft Spare Parts**](./system-engineering-lp) | Optimeringsmodell (LP + DP) för reservdelsallokering och kostnads–nytta-analys. |
