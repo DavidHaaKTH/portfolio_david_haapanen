@@ -11,6 +11,9 @@ Varje projekt innehåller en kort beskrivning av syfte, metod, lärdomar och min
 
 ## Projektöversikt
 
+**Tillämpade projekt och kursarbeten inom maskininlärning, riskanalys och optimering.**
+
+
 
 | Projekt | Kort beskrivning |
 |----------|------------------|
