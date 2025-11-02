@@ -27,7 +27,7 @@ Nedan visas den artificiella neurala nätverkets arkitektur som användes i proj
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
 ###En illusterande bild av alla steg som utfördes under projektets gång kan ses nedan
-![Flowchart](flow_chart.png)
+![Flowchart](flow_chart2.png)
 ---
 
 ## Resultat
