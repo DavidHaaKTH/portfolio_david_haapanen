@@ -1,13 +1,13 @@
 # Pricing of Insurance Premiums using Generalized Linear Models (GLM)
 
 **Typ:** Projekt inom kursen Regressionsanalys (KTH, 2025)  
-**Roll:** Grupparbete – ansvarade för modellering, implementation i R och resultatvisualisering  
-**Språk:** R  
+**Roll:** Ansvarade för modellering, implementation i Python, resultatvisualisering och rapport skrivning
+**Språk:** Python  
 
 ---
 
 ## Syfte
-Syftet med projektet var att analysera och förutsäga försäkringspremier baserat på kunddata från **If Insurance**, med hjälp av **Generalized Linear Models (GLM)**.  
+Syftet med projektet var att analysera och bestämma priset för reseförsäkringspremier baserat på kunddata från **If Insurance**, med hjälp av **Generalized Linear Models (GLM)**.  
 Projektet fokuserade på att identifiera vilka faktorer som bäst förklarar risken för försäkringsskador och hur dessa kan användas för att optimera prissättning och riskhantering.
 
 Vi modellerade både **frekvens (antal skador)** och **severity (kostnad per skada)** med olika länkfunktioner och fördelningar, i syfte att uppskatta den förväntade totala kostnaden per kund.
