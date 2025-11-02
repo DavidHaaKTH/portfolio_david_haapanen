@@ -1,6 +1,4 @@
-# Prediction of Municipal Solid Waste
-# Generation and its corresponding
-# Lower Heating Value in the EU
+# Prediction of Municipal Solid Waste Generation and its corresponding Lower Heating Value in the EU
 A Case Study of Romania
 
 **Typ:** Kandidatexamensarbete (KTH, 2024)  
