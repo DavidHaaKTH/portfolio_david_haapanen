@@ -26,8 +26,8 @@ Nedan visas den artificiella neurala nätverkets arkitektur som användes i proj
 - **Baslinje:** MLR tränad på samma dataset  
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
-####En illusterande bild av alla steg som utfördes under projektets gång kan ses nedan
-![Flowchart](flow_chart.png)
+###En illusterande bild av alla steg som utfördes under projektets gång kan ses nedan
+![Flowchart](method_flowchart.png)
 ---
 
 ## Resultat
