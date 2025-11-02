@@ -1,4 +1,7 @@
-# Forecasting Energy Recovery in the EU using Artificial Neural Networks
+# Prediction of Municipal Solid Waste
+# Generation and its corresponding
+# Lower Heating Value in the EU
+A Case Study of Romania
 
 **Typ:** Kandidatexamensarbete (KTH, 2024)  
 **Roll:** Självständigt arbete – ansvarade för hela projektet med projektpartner (datainsamling, modellering, analys och rapport).  
