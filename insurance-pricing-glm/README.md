@@ -13,8 +13,8 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
 
 ### Metod och implementation
 - **Datakälla:** Historiska försäkringsdata (149 000 observationer, 10 variabler) från If (2018–2022).  
-- **Databehandling:** Hantering av outliers, skapande av tariffgrupper (baserat på risk homogenitet)och kategorisering av variabler.
-  ### 📋 Tariffgrupper och modellval
+- **Databehandling:** Skapande av tariffgrupper (baserat på risk homogenitet)och kategorisering av variabler.
+  ### Tariffgrupperingat och modellval
 
 | **Tariffgrupp** | **Beskrivning** | **Kategorier** | **Inkluderad i reducerad modell** |
 |-----------------|-----------------|----------------|:--------------------------------:|
