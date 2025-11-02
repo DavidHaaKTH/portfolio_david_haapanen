@@ -8,15 +8,26 @@ A Case Study of Romania
 ---
 
 ## Syfte
-Syftet var att utveckla prediktiva modeller för att uppskatta mängden **energi som kan återvinnas från avfall i EU-länder**, baserat på data om avfallsflöden och materialkomposition. Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Multiple Linear Regression (MLR)**-modell för att bedöma skillnader i noggrannhet och generaliseringsförmåga.
+Huvudsyftet av projektet var att undersöka hur maskininlärning kan användas för att stödja **långsiktig hållbar energi- och resursplanering** genom dataanalys. Således utvecklades två prediktiva modeller för att uppskatta mängden **energi som kan återvinnas från avfall i EU-länder** inför 2025 och 2035, baserat på data om avfallsflöden, materialkomposition och socio-ekonomiska riktmärken. 
+
+Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Multiple Linear Regression (MLR)**-modell för att bedöma skillnader i noggrannhet och generaliseringsförmåga. Efter den slutgiltiga modelen blivit vald tillämpades den på en fallstudie för Rumänien. 
 
 ---
 
-## Metod
-- Datainsamling av avfalls- och energidata för EU-länder (Eurostat och litteraturdata).  
+### Metod och implementation
+- Datainsamling av avfalls- och energidata för EU-länder (Eurostat och The World Bank Group).
+- Datahantering m.h.a. preprocessing och borttaggning av datapunkter. 
 - Implementation av ANN och MLR i MATLAB.  
 - Modellutvärdering med \( R^2 \), RMSE och MAPE.  
 - Test av modellernas känslighet mot olika fraktionssammansättningar i avfall.
+ 
+- **Datakälla:** Eurostat – avfallsproduktion och energiåtervinning (2000–2020)
+- **Förbehandling:** normalisering, imputering av saknade värden, urval av prediktorer
+- **ANN-arkitektur:**  
+  - Ett dolt lager, sigmoidaktivering  
+  - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
+- **Utvärderingsmått:** R², RMSE, MAPE
+- **Baslinje:** MLR tränad på samma dataset
 
 ---
 
