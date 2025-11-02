@@ -15,7 +15,7 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 
 ### Metod och implementation
 - **Datakällor:** Insamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder utfördes m.h.a.Eurostat och The World Bank Group.
-- **Datahantering:** Preprocessing, borttaggning av datapunkter och urval av prediktorer. 
+- **Datahantering:** Preprocessing (logaritmering och normalisering), borttaggning av datapunkter och urval av prediktorer. 
 - **ANN-arkitektur:**
 ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där antalet gömda neuroner baserades på vad som gav lägsta mediana validation error baserat på 100 individuella nätverk utvecklade på tränings datan (se längre ned).
 ![ANN-arkitektur](net_overview.png)
