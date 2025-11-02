@@ -16,18 +16,17 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 ### Metod och implementation
 - **Datakällor:** Insamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder utfördes m.h.a.Eurostat och The World Bank Group.
 - **Datahantering:** Preprocessing, borttaggning av datapunkter och urval av prediktorer. 
-- **ANN-arkitektur:**  
+- **ANN-arkitektur:**
+  ![ANN-arkitektur](net_overview.png) 
   - Ett dolt lager med 23 gömda noder, sigmoidaktivering
-  - 7 outputs som representerade mängd av respektive avfallstyp  
+  - 7 outputs som representerade mängd av respektive avfallstyp
   - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
-Nedan visas den artificiella neurala nätverkets arkitektur som användes i projektet:
-
-![ANN-arkitektur](net_overview.png)
 - **Baslinje:** MLR tränad på samma dataset  
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
-###En illusterande bild av alla steg som utfördes under projektets gång kan ses nedan
+**Flowchart som illustrerar av alla steg som utfördes under projektets**
 ![Flowchart](flow_chart2.png)
+
 ---
 
 ## Resultat
