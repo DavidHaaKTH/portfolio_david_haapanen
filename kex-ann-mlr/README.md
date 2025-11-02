@@ -7,7 +7,7 @@
 ---
 
 ## Syfte
-Huvudsyftet av projektet var att undersöka hur maskininlärning kan användas för att stödja **långsiktig hållbar energi- och resursplanering** genom dataanalys. Således utvecklades två prediktiva modeller för att uppskatta mängden **energi som kan återvinnas från avfall i EU-länder** inför 2025 och 2035, baserat på data om avfallsflöden, materialkomposition och socio-ekonomiska riktmärken. 
+Huvudsyftet av projektet var att undersöka hur maskininlärning kan användas för att stödja **långsiktig hållbar energi- och resursplanering** genom dataanalys. Således utvecklades två prediktiva modeller för att uppskatta mängden **energi som kan återvinnas från avfall i EU-länder**, baserat på data om avfallsflöden, materialkomposition och socio-ekonomiska riktmärken. 
 
 Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Multiple Linear Regression (MLR)**-modell för att bedöma skillnader i noggrannhet och generaliseringsförmåga. Efter den slutgiltiga modelen blivit vald tillämpades den på en fallstudie för Rumänien. 
 
