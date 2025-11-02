@@ -14,22 +14,6 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
 ### Metod och implementation
 - **Datakälla:** Historiska försäkringsdata (149 000 observationer, 10 variabler) från If (2018–2022).  
 - **Databehandling:** Skapande av tariffgrupper (baserat på risk homogenitet)och kategorisering av variabler.
-  ### Tariffgrupperingat och modellval
-
-| **Tariffgrupp** | **Beskrivning** | **Kategorier** | **Inkluderad i reducerad modell** |
-|-----------------|-----------------|----------------|:--------------------------------:|
-| **NoPGroup** | Antal personer försäkrade per företag – påverkar skadefrekvensen. | 2–4, 5–9, 10–24, 25–49, 50+ | ✅ |
-| **ActivityGroup** | Branschtillhörighet; olika yrken med olika risknivåer. | Industrial, Service, Other | ❌ |
-| **CompanyAgeGroup** | Företagets ålder, äldre bolag anses stabilare och gör färre skador. | New (0–2), Emerging (3–10), Established (11–25), Mature (26–50), Seasoned (50+) | ❌ |
-| **TravelGroup** | Resområde; längre resor antas innebära högre risk. | Scandic, Euro, International | ✅ |
-| **FinancialGroup** | Kreditbetyg; svagare ekonomi korrelerar med högre skadefrekvens. | High (AAA), Upper-Mid (AA–A), Mid (BBB–BB), Low (B–C), Other (IR, AN, missing) | ✅ |
-
----
-
-### 💡 Tolkningsnotis
-De tre grupper som behölls i den **reducerade modellen (✅)** visade sig ge bäst balans mellan modellkomplexitet och förklaringsgrad.  
-Faktorerna **ActivityGroup** och **CompanyAgeGroup** togs bort eftersom deras inverkan var svag och överlappade med övriga variabler (AIC och LR-test visade ingen signifikant förbättring).
-
 - **Modellering:** innefattas både för hur ofta ett företag ber om reseförsäkring och hur mycket
   - Frekvensmodell → Poisson-GLM med log-länk
   - Severitymodell → Gamma-GLM med log-länk
@@ -39,6 +23,18 @@ Faktorerna **ActivityGroup** och **CompanyAgeGroup** togs bort eftersom deras in
   - Likelihood-ratio-test
   - AIC-värden
 
+**Tariffgrupperingar och vilka som behölls i den reducerade modellen illustreras nedan**
+---
+| **Tariffgrupp** | **Beskrivning** | **Kategorier** | **Inkluderad i reducerad modell** |
+|-----------------|-----------------|----------------|:--------------------------------:|
+| **NoPGroup** | Antal personer försäkrade per företag – påverkar skadefrekvensen. | 2–4, 5–9, 10–24, 25–49, 50+ | ✅ |
+| **ActivityGroup** | Branschtillhörighet; olika yrken med olika risknivåer. | Industrial, Service, Other | ❌ |
+| **CompanyAgeGroup** | Företagets ålder, äldre bolag anses stabilare och gör färre skador. | New (0–2), Emerging (3–10), Established (11–25), Mature (26–50), Seasoned (50+) | ❌ |
+| **TravelGroup** | Resområde; längre resor antas innebära högre risk. | Scandic, Euro, International | ✅ |
+| **FinancialGroup** | Kreditbetyg; företag med liknande ekonomi använder sig av reseförsäkring på ett liknande sätt högre. | High (AAA), Upper-Mid (AA–A), Mid (BBB–BB), Low (B–C), Other (IR, AN, missing) | ✅ |
+
+### 💡 Tolkningsnotis
+De tre grupper som behölls i den **reducerade modellen (✅)** visade sig ge bäst balans mellan modellkomplexitet och predikativ förmåga. Faktorerna **ActivityGroup** och **CompanyAgeGroup** togs bort eftersom deras inverkan var svag och överlappade med övriga variabler (AIC och LR-test visade ingen signifikant förbättring).
 
 ---
 
