@@ -22,7 +22,7 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
   - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
 Nedan visas den artificiella neurala nätverkets arkitektur som användes i projektet:
 
-![ANN-arkitektur](ann_architecture.png)
+![ANN-arkitektur](net_overview.png)
 - **Baslinje:** MLR tränad på samma dataset  
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
