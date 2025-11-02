@@ -23,7 +23,7 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
   - Likelihood-ratio-test
   - AIC-värden
 
-**Tariffgrupperingar och vilka som behölls i den reducerade modellen illustreras nedan**
+###Tariffgrupperingar och vilka som behölls i den reducerade modellen illustreras nedan
 ---
 | **Tariffgrupp** | **Beskrivning** | **Kategorier** | **Inkluderad i reducerad modell** |
 |-----------------|-----------------|----------------|:--------------------------------:|
@@ -33,8 +33,7 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
 | **TravelGroup** | Resområde; längre resor antas innebära högre risk. | Scandic, Euro, International | ✅ |
 | **FinancialGroup** | Kreditbetyg; företag med liknande ekonomi använder sig av reseförsäkring på ett liknande sätt högre. | High (AAA), Upper-Mid (AA–A), Mid (BBB–BB), Low (B–C), Other (IR, AN, missing) | ✅ |
 
-### 💡 Tolkningsnotis
-De tre grupper som behölls i den **reducerade modellen (✅)** visade sig ge bäst balans mellan modellkomplexitet och predikativ förmåga. Faktorerna **ActivityGroup** och **CompanyAgeGroup** togs bort eftersom deras inverkan var svag och överlappade med övriga variabler (AIC och LR-test visade ingen signifikant förbättring).
+De tre grupper som behölls i den **reducerade modellen** visade sig ge bäst balans mellan modellkomplexitet och predikativ förmåga. Faktorerna **ActivityGroup** och **CompanyAgeGroup** togs bort eftersom deras inverkan var svag och överlappade med övriga variabler (AIC och LR-test visade ingen signifikant förbättring).
 
 ---
 
