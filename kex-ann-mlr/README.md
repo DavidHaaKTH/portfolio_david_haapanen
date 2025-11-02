@@ -59,3 +59,38 @@ ANN-modellen generaliserade bättre till test datan samt visade bättre prestand
 ### Rapport
 Hela kandidatarbetet finns publicerat i KTH:s DiVA-databas:  
 📄 [Prediction of Municipal Solid Waste Generation and its corresponding Lower Heating Value in the EU: A Case Study of Romania](https://kth.diva-portal.org/smash/get/diva2:1897134/FULLTEXT01.pdf)
+
+---
+---
+
+## Kodstruktur
+
+Projektet är implementerat i MATLAB och organiserat enligt följande:
+
+| Fil | Syfte |
+|-----|-------|
+| `ANN.m` | Tränar och utvärderar det artificiella neurala nätverket (ANN) |
+| `Regression.m` | Tränar den multipla linjära regressionsmodellen (MLR) |
+| `Performance_of_models.m` | Beräknar MSE, R², RMSE, MAPE och MdAPE |
+| `data_norm_input.m` / `data_norm_output.m` | Normaliserar indata och utdata |
+| `data_reverse_norm_output.m` | Återskapar ursprunglig skala för prediktioner |
+| `LHV_prediction.m` | Använder den tränade modellen för att förutsäga energiåtervinning (Rumänien 2025 & 2035) |
+
+Mindre hjälpfunktioner finns i mappen `/code/utils/` och figurer sparas i `/plots/`.
+
+---
+
+### Körningsexempel
+
+```matlab
+% Förbehandling av data
+[X_train, Y_train, X_val, Y_val, X_test, Y_test] = data_norm_input('data/Processing_of_data.csv');
+
+% Träna och utvärdera ANN-modellen
+net = ANN(X_train, Y_train, X_val, Y_val, X_test, Y_test);
+
+% Träna och utvärdera MLR-modellen
+mlr_model = Regression(X_train, Y_train);
+
+% Jämför modeller
+Performance_of_models(net, mlr_model, X_test, Y_test);
