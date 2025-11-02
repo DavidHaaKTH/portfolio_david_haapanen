@@ -9,7 +9,7 @@
 ## Syfte
 Huvudsyftet av projektet var att undersöka hur maskininlärning kan användas för att stödja **långsiktig hållbar energi- och resursplanering** genom dataanalys. Således utvecklades två prediktiva modeller för att uppskatta mängden **energi som kan återvinnas från avfall i EU-länder**, baserat på data om avfallsflöden, materialkomposition och socio-ekonomiska riktmärken. 
 
-Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Multiple Linear Regression (MLR)**-modell för att bedöma skillnader i noggrannhet och generaliseringsförmåga. Efter den slutgiltiga modelen blivit vald tillämpades den på en fallstudie för Rumänien. 
+Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Multiple Linear Regression (MLR)**-modell för att bedöma skillnader i noggrannhet och generaliseringsförmåga. Efter den slutgiltiga modelen blivit vald tillämpades den i samband med en fallstudie för Rumänien. 
 
 ---
 
@@ -35,8 +35,8 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 ---
 
 ## Resultat
-- **Modellprestanda** baserat på test
-| **Prestandamått** | **ANN** | **MLR** |
+- **Modellprestanda** baserat på test data
+| **Utvärderingsmått** | **ANN** | **MLR** |
 |--------------------|:-------:|:-------:|
 | MSE | 0.0076* | 0.0104* |
 | R (test)* | **0.9133** | **0.8661** |
@@ -45,15 +45,9 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 | MAPE [%] | 60.33 | 97.98 |
 | MdAPE [%] | 38.24 | 51.44 |
 
-Det neurala nätverket gav cirka **15 % bättre noggrannhet** jämfört med den linjära modellen.  
-Känslighetsanalys visade att **avfallssammansättning och lägre värmevärde (LHV)** var de mest betydelsefulla faktorerna.
- 
-- **ANN-modellen** uppnådde högre förklaringsgrad och lägre fel än MLR.  
-- Modellerna användes för att förutsäga framtida energiåtervinning (Rumänien 2025 och 2035).  
-- Känslighetsanalysen visade att ökade andelar plast och papper höjde det beräknade LHV-värdet.
-
-
-
+- ANN-modellen uppnådde högre prestanda med lägre fel i jämförelse med MLR.  
+- Modellerna användes sedan för att förutsäga framtida energiåtervinning (Rumänien 2025 och 2035).
+- 
 ---
 
 ## Lärdomar
