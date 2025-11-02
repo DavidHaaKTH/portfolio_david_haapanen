@@ -17,10 +17,10 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 - **Datakällor:** Insamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder utfördes m.h.a.Eurostat och The World Bank Group.
 - **Datahantering:** Preprocessing, borttaggning av datapunkter och urval av prediktorer. 
 - **ANN-arkitektur:**
-ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där antalet gömda neuroner baserades på vad som gav lägsta mediana validation error baserat på 100 individuella nätverk utvecklade på tränings datan. Illustration av training och validation error i samband med det färdiga nätverkets prestandan och arkitektur kan ses nedan.
+ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där antalet gömda neuroner baserades på vad som gav lägsta mediana validation error baserat på 100 individuella nätverk utvecklade på tränings datan. Illustration av training och validation error i samband med det färdiga nätverkets inlärningsprestanda och arkitektur kan ses nedan.
 
-  ![hidden_layer](Optimizing number of hidden neurons.jpg)
-  ![final_model_performance](Neural Network Training Performance.jpg)
+  ![hidden_layer](train_val_error.png)
+  ![final_model_performance](NN_train_perf.png)
   ![ANN-arkitektur](net_overview.png)
   - 5 inputs som representerar socio-ekonomiska metriker
   - Ett dolt lager med 23 gömda noder, sigmoidaktivering
