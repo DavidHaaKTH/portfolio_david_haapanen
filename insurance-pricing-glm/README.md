@@ -38,16 +38,14 @@ De tre grupper som behölls i den **reducerade modellen** visade sig ge bäst ba
 ---
 
 ## Resultat
-Projektet visade att **ålder, region och kreditrating** hade starkast samband med skadekostnad.  
-Den reducerade modellen (färre prediktorer) presterade **bättre Gini-koefficient** än den fulla, vilket tyder på minskad överanpassning och förbättrad generalisering.
+Projektet visade att **ålder, region och kreditrating** hade starkast samband med skadekostnad. Den reducerade modellen ledde till en **bättre Gini-koefficient** jämfört med modellen som använde alla predikatorer. Detta tyder på minskad överanpassning och förbättrad generalisering.
 
 - **Jämförelse mellan modeller**
 
 | **Mått** | **Full modell** | **Reducerad modell** |
 |-----------|:----------------:|:--------------------:|
 | AIC | 1842.3 | **1795.8** |
-| Gini | 0.312 | **0.349** |
-| Pseudo-R² | 0.41 | 0.39 |
+
 
 ---
 
