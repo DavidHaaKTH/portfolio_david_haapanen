@@ -40,12 +40,13 @@ De tre grupper som behölls i den **reducerade modellen** visade sig ge bäst ba
 ## Resultat
 Projektet visade att **ålder, region och kreditrating** hade starkast samband med skadekostnad. Den reducerade modellen ledde till en **bättre Gini-koefficient** jämfört med modellen som använde alla predikatorer. Detta tyder på minskad överanpassning och förbättrad generalisering.
 
-- **Jämförelse mellan modeller**
 
 | **Mått** | **Full modell** | **Reducerad modell** |
 |-----------|:----------------:|:--------------------:|
 | AIC | 1842.3 | **1795.8** |
-
+**Gini plots för respektive model**
+<img src="Gini_fullmodel.png" width="600">
+<img src="Gini_reducedmodel.png" width="600">
 
 ---
 
