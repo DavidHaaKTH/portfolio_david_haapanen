@@ -20,6 +20,9 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
   - Ett dolt lager med 23 gömda noder, sigmoidaktivering
   - 7 outputs som representerade mängd av respektive avfallstyp  
   - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
+Nedan visas den artificiella neurala nätverkets arkitektur som användes i projektet:
+
+![ANN-arkitektur](ann_architecture.png)
 - **Baslinje:** MLR tränad på samma dataset  
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
