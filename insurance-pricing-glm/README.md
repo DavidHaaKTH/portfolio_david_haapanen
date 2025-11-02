@@ -43,10 +43,7 @@ Projektet visade att **ålder, region och kreditrating** hade starkast samband m
 
 | **Mått** | **Full modell** | **Reducerad modell** |
 |-----------|:----------------:|:--------------------:|
-| AIC | 1842.3 | **1795.8** |
-**Gini plots för respektive model**
-<img src="Gini_fullmodel.png" width="600">
-<img src="Gini_reducedmodel.png" width="600">
+| Gini | 0.676 | **0.689** |
 
 ---
 
