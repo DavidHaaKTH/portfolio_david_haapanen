@@ -56,4 +56,6 @@ ANN-modellen generaliserade bättre till test datan samt visade bättre prestand
 - Förmågan att kombinera teknisk modellering med hållbarhetsanalys.
 
 ---
-Full rapport: [`report/KEX_Slutinläming_2024-05-23.pdf`](./report/KEX_Slutinläming_2024-05-23.pdf)
+### Rapport
+Hela kandidatarbetet finns publicerat i KTH:s DiVA-databas:  
+📄 [Prediction of Municipal Solid Waste Generation and its corresponding Lower Heating Value in the EU: A Case Study of Romania](https://kth.diva-portal.org/smash/get/diva2:1897134/FULLTEXT01.pdf)
