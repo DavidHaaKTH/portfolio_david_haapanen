@@ -28,10 +28,9 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 
 **Flowchart som illustrerar av alla steg som utfördes under projektets**
 <img src="flow_chart2.png" width="600">
-![Flowchart](flow_chart2.png)
 
 **Illustration av training och validation error i samband med det färdiga nätverkets arkitektur**
-![final_model_performance](train_val_error.png)
+<img src="train_val_error.png" width="600">
 
 ---
 
