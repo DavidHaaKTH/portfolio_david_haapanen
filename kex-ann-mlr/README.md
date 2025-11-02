@@ -35,7 +35,10 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 ---
 
 ## Resultat
+ANN-modellen generaliserade bättre till test datan samt visade bättre prestanda utifrån de valda utvärderingsmåtten. Modellerna användes även sedan för att förutsäga den framtida energiåtervinningen för Rumänien år 2025 och 2035.
+
 - **Modellprestanda** baserat på test data
+  
 | **Utvärderingsmått** | **ANN** | **MLR** |
 |--------------------|:-------:|:-------:|
 | MSE | 0.0076* | 0.0104* |
@@ -45,9 +48,6 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 | MAPE [%] | 60.33 | 97.98 |
 | MdAPE [%] | 38.24 | 51.44 |
 
-- ANN-modellen uppnådde högre prestanda med lägre fel i jämförelse med MLR.  
-- Modellerna användes sedan för att förutsäga framtida energiåtervinning (Rumänien 2025 och 2035).
-- 
 ---
 
 ## Lärdomar
