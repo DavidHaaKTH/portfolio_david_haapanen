@@ -27,10 +27,11 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 - **Utvärderingsmått:** R, R², RMSE, MAPE, MdAPE, APE
 
 **Flowchart som illustrerar av alla steg som utfördes under projektets**
+<img src="flow_chart2.png" width="600">
 ![Flowchart](flow_chart2.png)
 
 **Illustration av training och validation error i samband med det färdiga nätverkets arkitektur**
-![final_model_performance](NN_train_perf.png)
+![final_model_performance](train_val_error.png)
 
 ---
 
