@@ -14,7 +14,7 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
 ### Metod och implementation
 - **Datakälla:** Historiska försäkringsdata (149 000 observationer, 10 variabler) från If (2018–2022).  
 - **Databehandling:** Hantering av outliers, skapande av tariffgrupper och kategorisering av variabler.  
-- **Modellering:**
+- **Modellering:** innefattas både för hur ofta ett företag ber om reseförsäkring och hur mycket
   - Frekvensmodell → Poisson-GLM med log-länk
   - Severitymodell → Gamma-GLM med log-länk
   - Premie = Frekvens × Severity
