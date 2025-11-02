@@ -35,33 +35,23 @@ ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där a
 ---
 
 ## Resultat
-Användning av 
-- **ANN-modellen** uppnådde högre förklaringsgrad och lägre fel än MLR.  
-- Modellerna användes för att förutsäga framtida energiåtervinning (Rumänien 2025 och 2035).  
-- Känslighetsanalysen visade att ökade andelar plast och papper höjde det beräknade LHV-värdet.
-
-- ### Modellprestanda: jämförelse mellan ANN och MLR
-
+- **Modellprestanda** baserat på test
 | **Prestandamått** | **ANN** | **MLR** |
 |--------------------|:-------:|:-------:|
 | MSE | 0.0076* | 0.0104* |
-| R (träning) | 0.8297 | 0.8009 |
 | R (test)* | **0.9133** | **0.8661** |
 | R² | 0.6332 | 0.5375 |
 | RMSE [Mt] | 1.7223 | 1.9340 |
 | MAPE [%] | 60.33 | 97.98 |
 | MdAPE [%] | 38.24 | 51.44 |
 
-\* Normaliserade mål- och utdata.
-
-  
-| Modell | R² | RMSE | Kommentar |
-|--------|----|------|------------|
-| MLR | 0,74 | 0,092 | Baslinjemodell |
-| ANN | **0,88** | **0,063** | Högre generalisering och precision |
-
 Det neurala nätverket gav cirka **15 % bättre noggrannhet** jämfört med den linjära modellen.  
 Känslighetsanalys visade att **avfallssammansättning och lägre värmevärde (LHV)** var de mest betydelsefulla faktorerna.
+ 
+- **ANN-modellen** uppnådde högre förklaringsgrad och lägre fel än MLR.  
+- Modellerna användes för att förutsäga framtida energiåtervinning (Rumänien 2025 och 2035).  
+- Känslighetsanalysen visade att ökade andelar plast och papper höjde det beräknade LHV-värdet.
+
 
 
 ---
