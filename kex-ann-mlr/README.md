@@ -14,7 +14,7 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 ---
 
 ### Metod och implementation
-- Datainsamling av avfalls- och energidata för EU-länder (Eurostat och The World Bank Group).
+- Datainsamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder (Eurostat och The World Bank Group).
 - Datahantering m.h.a. preprocessing och borttaggning av datapunkter. 
 - Implementation av ANN och MLR i MATLAB.  
 - Modellutvärdering med \( R^2 \), RMSE och MAPE.  
