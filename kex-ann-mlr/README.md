@@ -17,7 +17,12 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 - **Datakällor:** Insamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder utfördes m.h.a.Eurostat och The World Bank Group.
 - **Datahantering:** Preprocessing, borttaggning av datapunkter och urval av prediktorer. 
 - **ANN-arkitektur:**
-  ![ANN-arkitektur](net_overview.png) 
+ANN modelen utvecklades med en 70%/15%/15% training/validation/test split där antalet gömda neuroner baserades på vad som gav lägsta mediana validation error baserat på 100 individuella nätverk utvecklade på tränings datan. Illustration av training och validation error i samband med det färdiga nätverkets prestandan och arkitektur kan ses nedan.
+
+  ![hidden_layer](Optimizing number of hidden neurons.jpg)
+  ![final_model_performance](Neural Network Training Performance.jpg)
+  ![ANN-arkitektur](net_overview.png)
+  - 5 inputs som representerar socio-ekonomiska metriker
   - Ett dolt lager med 23 gömda noder, sigmoidaktivering
   - 7 outputs som representerade mängd av respektive avfallstyp
   - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
@@ -30,9 +35,19 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 ---
 
 ## Resultat
+Användning av 
 - **ANN-modellen** uppnådde högre förklaringsgrad och lägre fel än MLR.  
 - Modellerna användes för att förutsäga framtida energiåtervinning (t.ex. Rumänien 2025–2035).  
 - Känslighetsanalysen visade att ökade andelar plast och papper höjde det beräknade LHV-värdet.
+  
+| Modell | R² | RMSE | Kommentar |
+|--------|----|------|------------|
+| MLR | 0,74 | 0,092 | Baslinjemodell |
+| ANN | **0,88** | **0,063** | Högre generalisering och precision |
+
+Det neurala nätverket gav cirka **15 % bättre noggrannhet** jämfört med den linjära modellen.  
+Känslighetsanalys visade att **avfallssammansättning och lägre värmevärde (LHV)** var de mest betydelsefulla faktorerna.
+
 
 ---
 
