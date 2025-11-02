@@ -7,8 +7,7 @@
 ---
 
 ## Syfte
-Syftet med projektet var att analysera och bestämma priset för reseförsäkringspremier baserat på kunddata från **If Insurance**, med hjälp av **Generalized Linear Models (GLM)**.  
-Projektet fokuserade på att identifiera vilka faktorer som bäst förklarar risken för försäkringsskador och hur dessa kan användas för att optimera prissättning och riskhantering.
+Syftet med projektet var att analysera och bestämma priset för reseförsäkringspremier baserat på kunddata från **If Insurance**, med hjälp av **Generalized Linear Models (GLM)**. Detta utfördes genom att identifiera vilka faktorer som bäst förklarar risken för försäkringsskador och hur dessa kan användas för att optimera prissättning och riskhantering.
 
 Vi modellerade både **frekvens (antal skador)** och **severity (kostnad per skada)** med olika länkfunktioner och fördelningar, i syfte att uppskatta den förväntade totala kostnaden per kund.
 
