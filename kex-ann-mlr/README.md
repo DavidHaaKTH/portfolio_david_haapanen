@@ -15,16 +15,17 @@ Projektet jämförde en **Artificial Neural Network (ANN)** med en klassisk **Mu
 
 ### Metod och implementation
 - Datainsamling av avfalls- och energidata samt mått på socio-ekonomisk förhållanden för EU-länder (Eurostat och The World Bank Group).
-- Datahantering m.h.a. preprocessing och borttaggning av datapunkter. 
-- Implementation av ANN och MLR i MATLAB.  
+- Datahantering m.h.a. preprocessing, borttaggning av datapunkter och urval av prediktorer. 
+- Implementation av ANN och MLR i MATLAB.
+  - **ANN-arkitektur:**  
+  - Ett dolt lager, sigmoidaktivering  
+  - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)  
 - Modellutvärdering med \( R^2 \), RMSE och MAPE.  
 - Test av modellernas känslighet mot olika fraktionssammansättningar i avfall.
  
 - **Datakälla:** Eurostat – avfallsproduktion och energiåtervinning (2000–2020)
 - **Förbehandling:** normalisering, imputering av saknade värden, urval av prediktorer
-- **ANN-arkitektur:**  
-  - Ett dolt lager, sigmoidaktivering  
-  - Tränad med backpropagation (Levenberg–Marquardt-algoritmen)
+
 - **Utvärderingsmått:** R², RMSE, MAPE
 - **Baslinje:** MLR tränad på samma dataset
 
