@@ -1,6 +1,6 @@
 # Heart Failure Classification using Machine Learning
 
-**Typ:** Kursprojekt inom kursen Modern Methods of Statistical Learning (KTH, 2025)  
+**Typ:** Kursprojekt inom kursen *Modern Methods of Statistical Learning (KTH, 2025)*  
 **Roll:** Ansvarade för modellering, utvärdering och rapportskrivning tillsammans med projektgrupp.
 
 **Språk:** Python  
