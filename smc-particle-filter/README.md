@@ -43,9 +43,10 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 ### Visualiseringar
 
-**Trajektoria (sann vs. estimerad, SISR)**  
+*Färdrutt (SIS vs. SISR)* 
 <p align="center">
-  <img src="img/trajectory_sisr.png" width="650" alt="Estimated vs true trajectory (SISR)">
+  <img src="img/SIS_norm.png" width="300" alt="Estimated vs true trajectory (SISR)">'
+  <img src="img/trajectory_SISR.png" width="300" alt="Estimated vs true trajectory (SISR)">
 </p>
 
 **Viktdegenerering (ESS över tiden)**  
