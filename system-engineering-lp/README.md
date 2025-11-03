@@ -29,7 +29,7 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 
 ### Marginal Allocation (MA)
 - Utvärderade **hur EBO minskar** när nya reservdelar läggs till.  
-- Effektiva punkter beräknades upp till \(C_{budget} = 500\).  
+- Effektiva punkter beräknades upp till \(C_budget = 500 kr\).  
 - Varje iteration valde den LRU med **högst marginalnytta per kostnad**.  
 
 ### Dynamic Programming (DP)
@@ -38,7 +38,7 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
   - *Stages:* komponenttyper (LRU1–LRU9)  
   - *States:* kvarvarande budget  
   - *Decision variable:* antal reservdelar per LRU  
-- Beräknade optimala lösningar för budgetnivåer {0, 100, 150, 350, 500}.  
+- Beräknade optimala lösningar för budgetnivåer {0, 100, 150, 350, 500} [kr].  
 
 ---
 
