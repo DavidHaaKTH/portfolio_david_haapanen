@@ -58,7 +58,7 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 *Parameter­svep och optimum (ζ̂ ≈ 2.20) samt färdrutt vid applicering (SISR)* 
 <p align="center">
-  <img src="Plot_ml_est.png" width="450">'
+  <img src="Plot_ml_est.png" width="430">'
   <img src="Traj_zeta.png" width="400"">
 </p>
 
