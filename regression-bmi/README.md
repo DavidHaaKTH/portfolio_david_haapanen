@@ -48,9 +48,10 @@ Utvecklingen av den slutgiltiga regressionsmodellen genomfördes stegvis enligt 
   - Residualdiagnostik (normalitet, homoskedasticitet, multikollinearitet)  
   - Modelljämförelse med transformationsförsök (t.ex. log-transform av BMI)
 
-**Exempel på regressionsmodell i R:**
-```r
-model <- lm(BMI ~ Age + Gender + ActivityLevel + CalorieIntake, data = df)
-summary(model)
+---
+
+### Rapport
+Hela rapporten finns tillgänglig här:  
+📄 [Insurance Pricing using GLM – Regression Analysis Project (KTH, 2025)](./Insurance_GLM_Report.pdf)
 
 
