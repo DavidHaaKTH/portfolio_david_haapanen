@@ -23,12 +23,43 @@ Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, ri
 | [**Regression Analysis - BMI prediction**](./regression-bmi) | Klassisk regressionsanalys i R med diagnostik och modellval. |
 
 ---
+## Metoder och tekniker
+Projekten innefattar tillämpning av matematik, statistik och datavetenskap.  
+Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
 
-## Tekniker och verktyg
-**Programmering:** Python, MATLAB, R, C  
-**Metoder:** Maskininlärning, Regression, Monte Carlo, Bayesianska metoder, Optimering  
-**Verktyg:** Git, scikit-learn, NumPy, PuLP, MATLAB, RStudio
+### 🔹 Maskininlärning
+- Supervised learning: regressionsmodeller, klassificering, neurala nätverk (ANN)
+- Ensemble-metoder: Random Forest, AdaBoost
+- Model selection och cross-validation
+- Feature engineering och dimensionalitetsreduktion (PCA)
+- Utvärderingsmått: R², RMSE, MAPE, F1-score, ROC, confusion matrix
 
+### 🔹 Statistisk modellering
+- Generalized Linear Models (GLM)
+- Hypotestestning och konfidensintervall
+- Multikollinearitetsanalys (VIF)
+- Variabeltransformation och residualanalys
+
+### 🔹 Optimering och beslutsanalys
+- Marginal Allocation och Dynamic Programming
+- Linjär programmering och kostnadsminimering
+- Trade-off-analys mellan prestanda och kostnad
+- Modellering av resursallokering och systemoptimering
+
+### 🔹 Numerisk analys och simulering
+- Monte Carlo-simuleringar (SMC, MCMC)
+- Approximation och stokastisk modellering
+- Regressionsanalys med Python och R
+
+---
+
+💻 **Programmeringsspråk och verktyg**
+- **Python**, **MATLAB**, **R**, **C**
+- Bibliotek: `scikit-learn`, `NumPy`, `pandas`, `matplotlib`
+- Versionshantering: **Git**, **GitHub**
+- Övrigt: **Excel**, **Solid Edge**, **COMSOL**, **ANSYS**
+
+  
 ---
 
 **Kontakt**
