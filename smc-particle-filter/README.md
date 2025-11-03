@@ -2,20 +2,21 @@
 
 **Typ:** Projekt inom kursen *Computer Intensive Methods in Mathematical Statistics (KTH, 2025)*  
 **Roll:** Implementering av SMC- och SISR-algoritmer, analys av resultat och rapportskrivning  
+
+
 **Språk:** MATLAB  
 
 ---
 
 ## Syfte
-Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder för att uppskatta rörelsebanor för ett rörligt objekt baserat på mottagna signalstyrkor (RSSI) från basstationer i ett mobilnät.  
-Projektet utgick från en **Hidden Markov Model (HMM)** där position, hastighet och acceleration modellerades, och målet var att använda partikelfilter för att estimera positioner i realtid.
+Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder för att uppskatta rörelsebanor för ett rörligt objekt baserat på mottagna signalstyrkor (RSSI) från basstationer i ett mobilnät. Projektet utgick från en **Hidden Markov Model (HMM)** där position, hastighet och acceleration modellerades, och målet var att använda partikelfilter för att estimera positioner i realtid.
 
 ---
 
 ## Metod och implementation
 - **Modellering:**
-  - Dynamikmodell för position och hastighet enligt ett stokastiskt system med Gaussian noise.
-  - Observationsmodell baserad på signalstyrka \( Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n \).
+  - Modellen för position och hastighet var grundat ur ett stokastiskt system med Gaussian noise.
+  - Observationsmodell baserad på signalstyrka $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n \) `$.
   - Antal basstationer: 6  
 - **Algoritmer:**
   - Implementerade både **Sequential Importance Sampling (SIS)** och **Sequential Importance Sampling with Resampling (SISR)**.
