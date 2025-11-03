@@ -2,6 +2,7 @@
 
 **Typ:** Projekt inom kursen Regressionsanalys (KTH, 2025)  
 **Roll:** Ansvarade för modellering, implementation i Python, resultatvisualisering och rapport skrivning
+
 **Språk:** Python  
 
 ---
