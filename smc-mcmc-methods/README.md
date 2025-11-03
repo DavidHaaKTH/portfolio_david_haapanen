@@ -1,7 +1,9 @@
 # Sequential Monte Carlo for Mobility Tracking
 
 **Typ:** Projekt inom kursen *Computer Intensive Methods in Mathematical Statistics (KTH, 2025)*  
-**Roll:** Implementering av SMC- och SISR-algoritmer, analys av resultat och rapportskrivning  
+**Roll:** Implementering av SMC- och SISR-algoritmer, analys av resultat och rapportskrivning
+
+
 **Språk:** MATLAB  
 
 ---
