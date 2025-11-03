@@ -72,17 +72,20 @@ Nedan följer huvudstegen:
 | Gaussian Process | 0.891 | 0.890 | 0.890 | 0.890 |
 
 **Bästa modell:** k-NN med PCA (Accuracy = 92.9%)  
-→ Enkel men effektiv metod som presterade bäst tack vare reduktion av dimensionsbrus.  
-
----
+→ Enkel men effektiv metod som presterade bäst.  
 
 ---
 
 ## Lärdomar
-- Praktisk erfarenhet av en full ML-pipeline: preprocessing → modellval → utvärdering.  
-- Hur val av metrik påverkar modelljämförelser.  
-- Vikten av databalans och cross-validation vid medicinska dataset.
+- Enkla modeller kan överträffa komplexa när datamängden är begränsad.  
+- Dimensionalitetsreduktion (PCA) förbättrar prestanda för avståndsbaserade algoritmer.  
+- Ensemble-metoder (RF, AdaBoost) erbjuder stabila och tolkbara alternativ.  
+- Neural Networks riskerar överanpassning vid små dataset — kräver regelbundenhet och tidig stoppning.  
+- Balansen mellan **bias–variance** är avgörande vid modellval.  
 
 ---
-Full rapport: [`report/SF2930Project1-DavidHaapanen-GustavKarlander.pdf`](./report/SF2930Project1-DavidHaapanen-GustavKarlander.pdf)
+
+## Rapport
+Hela projektet finns dokumenterat i rapporten:  
+📄 [Prediction of Heart Failure using Machine Learning Methods (KTH, 2025)](https://github.com/DavidHaaKTH/portfolio_david_haapanen/blob/main/heart-failure/Heart_failure_classificiation.pdf)
 
