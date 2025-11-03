@@ -15,10 +15,10 @@ Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, ri
 
 | Projekt | Kort beskrivning |
 |----------|------------------|
-| [**Insurance Pricing Model (If Insurance)**](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
-| [**Prediction of Waste Generation in the EU using ANN**](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
-| [**Heart Failure Classification**](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
-| [**Optimization of Aircraft Spare Parts**](./system-engineering-lp) | Optimeringsmodell (LP + DP) för reservdelsallokering och kostnads–nytta-analys. |
+| [**ANN - Prediction of Waste Generation in the EU**](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
+| [**GLM - Insurance Pricing Model (If Insurance)**](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
+| [**Classification with ML - Heart Failure**](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
+| [**Optimization with LP - Allocation of Aircraft Spare Parts**](./system-engineering-lp) | Optimeringsmodell (LP + DP) för reservdelsallokering och kostnads–nytta-analys. |
 | [**SMC & MCMC Methods**](./smc-mcmc-methods) | Probabilistiska metoder för sekventiell spårning och bayesianska posteriorer. |
 | [**Regression Analysis (BMI)**](./regression-bmi) | Klassisk regressionsanalys i R med diagnostik och modellval. |
 
