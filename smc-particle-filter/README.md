@@ -50,6 +50,8 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 </p>
 
 *Viktdegenerering (SIS vs. SISR)*  
+- Efter få tidssteg så har majoriteten av vikterna väldigt små värden utan re-sampling → viktdegeneration; **SISR** återställer mångfald för att motverka att några vikter dominerar estimeringar.  
+
 <p align="center">
   <img src="weight_hist_SIS.png" width="400">'
   <img src="weight_hist,SISR.png" width="400"">
@@ -60,13 +62,6 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
   <img src="Plot_ml_est.png" width="450">'
   <img src="Traj_zeta.png" width="400"">
 </p>
-
-
-### Kort tolkning
-- **ESS** dyker snabbt för **SIS** → viktdegeneration; **SISR** återställer mångfald via resampling.  
-- **SISR-trajektorian** ligger nära sann bana efter initial transients.  
-- **ζ-svep** ger tydligt maximum kring **ζ̂ ≈ 2.20**, vilket stödjer det valda bruset i observationsmodellen.
-
 
 ---
 
