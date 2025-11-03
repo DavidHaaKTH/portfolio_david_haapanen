@@ -13,7 +13,30 @@ Projektets syfte var att använda **multiple linear regression (MLR)** för att 
 ---
 
 ## Metod och implementation
-- **Datakälla:** Simulerad eller öppen hälsodata innehållande demografiska och livsstilsfaktorer.  
+- **Datakälla:** Simulerad eller öppen hälsodata innehållande 242 datapunkter och 14 prediktorer relaterade till antropometriska kropps mått.
+- ## Metod och implementation
+Utvecklingen av den slutgiltiga regressionsmodellen genomfördes stegvis enligt följande metodik:
+
+1. **Modellantaganden och validering**  
+   Säkerställde att grundläggande antaganden för linjär regression uppfylldes, inklusive linjäritet, normalfördelade residualer och konstant varians.
+
+2. **Identifiering av outliers och inflytelserika observationer**  
+   Analyserade leverage-värden och Cook’s distance för att upptäcka datapunkter som hade oproportionerligt stort inflytande på modellen.
+
+3. **Variabeltransformationer**  
+   Utförde transformationer (t.ex. log eller kvadratrot) där nödvändigt för att stabilisera varians och förbättra linjäritet mellan variabler.
+
+4. **Multikollinearitet**  
+   Undersökte korrelationer mellan prediktorer och beräknade VIF (Variance Inflation Factor) för att upptäcka redundanta variabler.
+
+5. **Variabelurval**  
+   Använde stegvis urval (Stepwise Selection) baserat på AIC och statistisk signifikans för att finna den mest parsimoniska modellen.
+
+6. **Prestandautvärdering**  
+   Bedömde modellens kvalitet med Adjusted R², RMSE samt analys av residualplots för att verifiera prediktionsförmåga och antaganden.
+
+
+
 - **Databehandling:**  
   - Hantering av saknade värden och outliers  
   - Normalisering och kodning av kategoriska variabler  
