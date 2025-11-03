@@ -19,8 +19,8 @@ Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, ri
 | [**GLM** - *Insurance Pricing Model (If Insurance)*](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
 | [**Classification with ML** - *Heart Failure*](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
 | [**Optimization** - *Allocation of Aircraft Spare Parts*](./system-engineering-lp) | Optimeringsmodell (MA + DP) för reservdelsallokering och kostnads–nytta-analys. |
-| [**SMC** - *Mobility Tracking*](./smc-particle-filter) | Sekventiell spårning av fordon |
 | [**MCMC and HMC** - *Bayesian Inference*](./mcmc-hmc) | Implementering av Monte Carlo metoder för att ta fram posterior fördelningar |
+| [**SMC** - *Mobility Tracking*](./smc-particle-filter) | Sekventiell spårning av fordon |
 | [**Regression Analysis** - *BMI prediction*](./regression-bmi) | Klassisk regressionsanalys i R med diagnostik och modellval. |
 
 ---
