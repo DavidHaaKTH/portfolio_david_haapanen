@@ -13,40 +13,24 @@ Projektets syfte var att använda **multiple linear regression (MLR)** för att 
 ---
 
 ## Metod och implementation
-- **Datakälla:** Simulerad eller öppen hälsodata innehållande 242 datapunkter och 14 prediktorer relaterade till antropometriska kropps mått.
+- **Datakälla:** Simulerad eller öppen hälsodata innehållande 242 datapunkter och 13 prediktorer relaterade till antropometriska kropps mått.
 - ## Metod och implementation
 Utvecklingen av den slutgiltiga regressionsmodellen genomfördes stegvis enligt följande metodik:
 
 1. **Modellantaganden och validering**  
-   Säkerställde att grundläggande antaganden för linjär regression uppfylldes, inklusive linjäritet, normalfördelade residualer och konstant varians.
+Säkerställde att grundläggande antaganden för linjär regression uppfylldes, inklusive linjäritet, normalfördelade residualer och konstant varians. Detta utfördes på den initiella modellen som använde alla 13 predikatorer m.h.a. Q-Q plots och residual vs. fitted values plots.
 
 2. **Identifiering av outliers och inflytelserika observationer**  
-   Analyserade leverage-värden och Cook’s distance för att upptäcka datapunkter som hade oproportionerligt stort inflytande på modellen.
+   Analyserade leverage-värden (från "hat-matrix"), Cook’s distance och DFFITS för att upptäcka datapunkter som hade starkt inflytande på modellen. 
 
-3. **Variabeltransformationer**  
-   Utförde transformationer (t.ex. log eller kvadratrot) där nödvändigt för att stabilisera varians och förbättra linjäritet mellan variabler.
+3. **Multikollinearitet**  
+   Undersökte korrelationer mellan prediktorer genom correlation matrix vilket indikerade samband mellan predikatorer. Genom beräkning av VIF (Variance Inflation Factor) och egen-värdes analys (condition number) uteslöts variabler som ansågs bidra med multikollinearitet. Detta ledde således till en reducerad modell.
 
-4. **Multikollinearitet**  
-   Undersökte korrelationer mellan prediktorer och beräknade VIF (Variance Inflation Factor) för att upptäcka redundanta variabler.
+4. **Variabelurval**  
+   Använde stegvis urval (Forward-/Backward Stepwise Selection) baserat på AIC och statistisk signifikans för att simplare modeller som ev. kan generalisera bättre. Detta ledde till ytterligare två kandidat modeller.
 
-5. **Variabelurval**  
-   Använde stegvis urval (Stepwise Selection) baserat på AIC och statistisk signifikans för att finna den mest parsimoniska modellen.
-
-6. **Prestandautvärdering**  
-   Bedömde modellens kvalitet med Adjusted R², RMSE samt analys av residualplots för att verifiera prediktionsförmåga och antaganden.
-
-
-
-- **Databehandling:**  
-  - Hantering av saknade värden och outliers  
-  - Normalisering och kodning av kategoriska variabler  
-- **Modellering:**  
-  - Multipel linjär regression (OLS)  
-  - Test av interaktionseffekter (t.ex. kön × ålder)  
-  - Modellurval baserat på AIC och Adjusted R²  
-- **Utvärdering:**  
-  - Residualdiagnostik (normalitet, homoskedasticitet, multikollinearitet)  
-  - Modelljämförelse med transformationsförsök (t.ex. log-transform av BMI)
+5. **Slutgiltig modell** 
+Alla modeller hade liknande prestanda baserat på MSE ifrån 10-fold CV. Då den reducerade modellen visade minst kollinearitet valdes den som den slutgiltiga modellen.
 
 ---
 
