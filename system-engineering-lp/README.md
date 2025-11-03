@@ -29,7 +29,7 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 
 ### Marginal Allocation (MA)
 - Utvärderade **hur EBO minskar** när nya reservdelar läggs till.  
-- Effektiva punkter beräknades upp till \(C_budget = 500 kr\).  
+- Effektiva punkter beräknades upp till \(C_<sub>budget</sub> = 500 kr\).  
 - Varje iteration valde den LRU med **högst marginalnytta per kostnad**.  
 
 ### Dynamic Programming (DP)
@@ -65,14 +65,20 @@ C<sub>budget</sub> = 500 kr
 | 14 | 1 | 1 | 2 | 3 | 1 | 1 | 2 | 1 | 1 | 1.74 | 410 |
 | 15 | 1 | 1 | 2 | 3 | 1 | 2 | 2 | 1 | 1 | **1.42** | **463** |
 
-| **Budget** | **Optimal konfiguration** | **EBO(s)** | **Kostnad** |
-|-------------|---------------------------|-------------|-------------:|
-| 0 | [0,0,0,0,0,0,0,0,0] | 7.71 | 0 |
-| 150 | [1,1,1,3,1,0,0,0,1] | 4.52 | 150 |
-| 500 | [2,1,2,3,1,1,3,1,1] | **1.23** | **499** |
+### Optimala Lösningar vid implentering av Dynamic Programming  
+Budget begräninsgar: C<sub>budget</sub> ∈ {0, 100, 150, 350, 500} [kr].
 
-**Visualisering av effektiva lösningar (MA) och globala optimum (DP):** blåa punkter kommer från 
-<img src="img/ebo_vs_cost.png" width="550">
+| **C<sub>budget</sub>** | **s₁** | **s₂** | **s₃** | **s₄** | **s₅** | **s₆** | **s₇** | **s₈** | **s₉** | **EBO(s)** | **C(s)** |
+|:----------------------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:----------:|:--------:|
+| 0   | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.71 | 0 |
+| 100 | 1 | 0 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 5.22 | 100 |
+| 150 | 1 | 1 | 1 | 3 | 1 | 0 | 0 | 0 | 1 | 4.52 | 150 |
+| 350 | 1 | 1 | 1 | 2 | 1 | 1 | 2 | 1 | 0 | 2.36 | 343 |
+| 500 | 2 | 1 | 2 | 3 | 1 | 1 | 3 | 1 | 1 | **1.23** | **499** |
+
+
+**Visualisering av effektiva lösningar (MA) och globala optimum (DP):** blåa punkter representerar effektiva punkter från MA medans the svarta visar optimala lösningar från DP.
+<img src="Plot_MA_DynP.png" width="550">
 
 ---
 
