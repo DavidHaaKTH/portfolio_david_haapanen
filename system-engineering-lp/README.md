@@ -78,22 +78,17 @@ Budget begräninsgar: C<sub>budget</sub> ∈ {0, 100, 150, 350, 500} [kr].
 
 
 **Visualisering av effektiva lösningar (MA) och globala optimum (DP):** blåa punkter representerar effektiva punkter från MA medans the svarta visar optimala lösningar från DP.
+
 <img src="Plot_MA_DynP.png" width="550">
 
 ---
 
 ## Lärdomar
-- Marginal Allocation ger en snabb överblick över effektiva trade-offs mellan kostnad och prestanda.  
+- Marginal Allocation ger en snabb överblick över effektiva kompromiser mellan kostnad och prestanda.  
 - Dynamic Programming ger den exakta globala lösningen men är beräkningsmässigt mer krävande.  
 - Projektet illustrerade praktisk tillämpning av **optimering, rekursiva metoder och resursplanering** inom systems engineering.  
 
 ---
 
 ## Rapport
-📄 [Optimization of Spare Parts Allocation (KTH, 2024)](./HA2_group35.pdf)
-
----
-
-## Kod
-💻 MATLAB-implementation av Marginal Allocation och Dynamic Programming finns i projektmappen:  
-📂 [`optimization`](https://github.com/DavidHaaKTH/portfolio_david_haapanen/tree/main/optimization)
+📄 [Optimization of Spare Parts Allocation (KTH, 2024)](./Allocation_Report.pdf)
