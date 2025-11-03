@@ -26,24 +26,22 @@ Nedan följer huvudstegen:
 
 1. **Datapreparation**
    - Separering av features och målvariabel  
-   - Stratifierad 80/20 train–test-split  
-   - Inga saknade värden upptäcktes  
+   - Fördelning av 80/20 train–test-split    
 
 2. **Förbehandling**
    - **Numeriska variabler:** Standardiserades med `StandardScaler`  
-   - **Kategoriska variabler:** Enkodades med `OneHotEncoder`  
+   - **Kategoriska variabler:** Ändrades binära värden med `OneHotEncoder`  
    - Båda stegen kombinerades via `ColumnTransformer` och inkluderades i en `Pipeline`  
 
 3. **Dimensionalitetsreduktion**
-   - **PCA** tillämpades för vissa modeller (särskilt k-NN) för att minska effekten av hög dimension och förbättra beräkningshastighet.
+   - **PCA** tillämpades för modeller som baseras på distans mellan punkter (särskilt k-NN) för att minska effekten av hög dimension och förbättra beräkningshastighet.
 
 4. **Modellering**
    Följande klassificeringsmetoder implementerades och jämfördes:
    - k-Nearest Neighbors (k-NN)  
-   - k-NN med PCA  
-   - Decision Tree  
+   - k-NN med PCA    
    - Random Forest  
-   - AdaBoost  
+   - AdaBoost applicerad på Decision Trees 
    - Neural Network (MLP)  
    - Support Vector Machine (SVM)  
    - Gaussian Process Classifier  
@@ -61,12 +59,22 @@ Nedan följer huvudstegen:
 
 ---
 
----
-
 ## Resultat
-- **Random Forest** och **SVM** presterade bäst med F1-score runt 0.84.  
-- PCA förbättrade resultatet för enklare modeller (k-NN, Logistic Regression).  
-- Feature-importance-analys visade att “ejection fraction” och “serum creatinine” var de mest betydelsefulla variablerna.
+
+| **Modell** | **Accuracy** | **F1-score** | **Precision** | **Recall** |
+|-------------|:------------:|:-------------:|:--------------:|:------------:|
+| k-NN | 0.918 | 0.920 | 0.920 | 0.920 |
+| k-NN + PCA | **0.929** | **0.930** | **0.930** | **0.930** |
+| Random Forest | 0.902 | 0.900 | 0.900 | 0.900 |
+| AdaBoost | 0.897 | 0.900 | 0.900 | 0.890 |
+| SVM (RBF) | 0.902 | 0.902 | 0.902 | 0.902 |
+| Neural Network | 0.880 | 0.880 | 0.882 | 0.880 |
+| Gaussian Process | 0.891 | 0.890 | 0.890 | 0.890 |
+
+**Bästa modell:** k-NN med PCA (Accuracy = 92.9%)  
+→ Enkel men effektiv metod som presterade bäst tack vare reduktion av dimensionsbrus.  
+
+---
 
 ---
 
