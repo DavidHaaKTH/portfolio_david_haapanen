@@ -14,7 +14,7 @@ Projektets syfte var att använda **multiple linear regression (MLR)** för att 
 
 ## Metod och implementation
 - **Datakälla:** Simulerad eller öppen hälsodata innehållande 242 datapunkter och 13 prediktorer relaterade till antropometriska kropps mått.
-- ## Metod och implementation
+
 Utvecklingen av den slutgiltiga regressionsmodellen genomfördes stegvis enligt följande metodik:
 
 1. **Modellantaganden och validering**  
