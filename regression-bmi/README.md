@@ -1,6 +1,6 @@
 # Multiple Linear Regression model for predicting BMI
 
-**Typ:** Projekt inom kursen Regressionsanalys (KTH, 2025)  
+**Typ:** Projekt inom kursen *Regression analysis (KTH, 2025)*  
 **Roll:** Ansvarade för databehandling, modellering, resultatpresentation och rapport skrivning
 
 **Språk:** R  
