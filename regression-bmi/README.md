@@ -8,8 +8,7 @@
 ---
 
 ## Syfte
-Projektets syfte var att använda **multiple linear regression (MLR)** för att undersöka hur olika variabler såsom ålder, kön, aktivitetsnivå och kostvanor påverkar individers **Body Mass Index (BMI)**.  
-Fokus låg på att utveckla en färdig modell där man tog i åtanke dess predektiva förmåga och residualstruktur mot teoretiska antaganden för linjära modeller.
+Projektets syfte var att använda **multiple linear regression (MLR)** för att undersöka hur olika variabler såsom ålder, kön, aktivitetsnivå och kostvanor påverkar individers **Body Mass Index (BMI)**. Fokus låg på att utveckla en färdig modell där man tog i åtanke dess predektiva förmåga och residualstruktur mot teoretiska antaganden för linjära modeller.
 
 ---
 
