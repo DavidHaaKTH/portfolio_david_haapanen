@@ -55,9 +55,10 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
   <img src="weight_hist,SISR.png" width="400"">
 </p>
 
-**Parameter­svep och optimum (ζ̂ ≈ 2.20)**  
+*Parameter­svep och optimum (ζ̂ ≈ 2.20) samt färdrutt vid applicering (SISR)* 
 <p align="center">
-  <img src="img/loglik_vs_zeta.png" width="650" alt="Log-likelihood vs zeta showing optimum around 2.20">
+  <img src="Plot_ml_est.png" width="400">'
+  <img src="Traj_zeta.png" width="400"">
 </p>
 
 <!-- Alternativ: två bilder sida vid sida (om du vill komprimera layouten)
