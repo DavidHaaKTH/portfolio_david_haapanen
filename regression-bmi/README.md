@@ -34,8 +34,7 @@ Alla modeller hade liknande prestanda baserat på MSE ifrån 10-fold CV. Då den
 
 ---
 
-### Rapport
-Hela rapporten finns tillgänglig här:  
+### Rapport 
 📄 [Prediction of BMI using MLR – Regression Analysis Project (KTH, 2025)](./Regression_BMI_Report.pdf)
 
 
