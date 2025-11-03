@@ -1,10 +1,10 @@
 # Heart Failure Classification using Machine Learning
 
 **Typ:** Kursprojekt inom kursen Modern Methods of Statistical Learning (KTH, 2025)  
-**Roll:** Ansvarade för modellering, utvärdering och rapportskrivning tillsammans med projektgrupp 
-
+**Roll:** Ansvarade för modellering, utvärdering och rapportskrivning tillsammans med projektgrupp.
 
 **Språk:** Python  
+
 ---
 
 ## Syfte
@@ -87,5 +87,5 @@ Nedan följer huvudstegen:
 
 ## Rapport
 Hela projektet finns dokumenterat i rapporten:  
-📄 [Prediction of Heart Failure using Machine Learning Methods (KTH, 2025)](https://github.com/DavidHaaKTH/portfolio_david_haapanen/blob/main/heart-failure/Heart_failure_classificiation.pdf)
+📄 [Prediction of Heart Failure using Machine Learning Methods (KTH, 2025)](./Heart_failure_classification.pdf)
 
