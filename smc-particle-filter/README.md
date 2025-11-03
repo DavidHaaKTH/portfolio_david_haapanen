@@ -57,16 +57,10 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 *Parameter­svep och optimum (ζ̂ ≈ 2.20) samt färdrutt vid applicering (SISR)* 
 <p align="center">
-  <img src="Plot_ml_est.png" width="400">'
+  <img src="Plot_ml_est.png" width="450">'
   <img src="Traj_zeta.png" width="400"">
 </p>
 
-<!-- Alternativ: två bilder sida vid sida (om du vill komprimera layouten)
-<p float="left">
-  <img src="img/trajectory_sisr.png" width="49%" alt="Trajectory SISR" />
-  <img src="img/ess_over_time.png" width="49%" alt="ESS over time" />
-</p>
--->
 
 ### Kort tolkning
 - **ESS** dyker snabbt för **SIS** → viktdegeneration; **SISR** återställer mångfald via resampling.  
