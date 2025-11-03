@@ -1,6 +1,6 @@
 # Optimization of Spare Parts Allocation using Marginal Allocation and Dynamic Programming
 
-**Typ:** Kursprojekt – Systems Engineering (SF2863), KTH 2024  
+**Typ:** Kursprojekt – Systems Engineering, KTH 2024  
 **Roll:** Implementation av optimeringsalgoritmer, simulering och rapportskrivning  
 **Språk:** MATLAB  
 
