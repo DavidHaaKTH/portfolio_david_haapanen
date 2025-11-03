@@ -25,14 +25,14 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
   - **λ**: felhastighet  
   - **T**: genomsnittlig reparationstid  
   - **c**: inköpskostnad  
-- Målet: minimera \(EBO(**s**)\) under budgetbegränsningen \(C(**s**) =< C_{budget}\).  
+- Målet: minimera \(EBO(**s**)\) under budgetbegränsningen \(C(**s**) ≤ C_budget\).  
 
-### 2️⃣ Marginal Allocation (MA)
+### Marginal Allocation (MA)
 - Utvärderade **hur EBO minskar** när nya reservdelar läggs till.  
 - Effektiva punkter beräknades upp till \(C_{budget} = 500\).  
 - Varje iteration valde den LRU med **högst marginalnytta per kostnad**.  
 
-### 3️⃣ Dynamic Programming (DP)
+### Dynamic Programming (DP)
 - Problemets rekursiva struktur utnyttjades för att hitta **globala optima** vid olika budgetnivåer.  
 - Definierade:
   - *Stages:* komponenttyper (LRU1–LRU9)  
