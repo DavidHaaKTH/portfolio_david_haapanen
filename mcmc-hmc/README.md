@@ -1,0 +1,49 @@
+# Bayesian Inference using MCMC and Hamiltonian Monte Carlo
+
+**Typ:** Projekt inom kursen *Computer Intensive Methods in Mathematical Statistics (KTH, 2025)*  
+**Roll:** Implementering av Gibbs-, Metropolis-Hastings- och Hamiltonian Monte Carlo-metoder  
+**Språk:** MATLAB  
+
+---
+
+## Syfte
+Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder för två olika problem:
+1. **Bayesiansk analys av kolgruveexplosioner** med flera brytpunkter i intensitetsfunktionen.
+2. **Hamiltonian Monte Carlo (HMC)** för sampling från en icke-trivial posterior med cirkulärt stöd.
+
+---
+
+## Metod och implementation
+- **Del 1: MCMC för Poissonprocess (Coal Mine Disasters)**
+  - Modell: Inhomogen Poisson-process med intensiteter \( \lambda_i \) och brytpunkter \( t_i \).
+  - Priors: \( \lambda_i \sim \Gamma(2, \theta), \ \theta \sim \Gamma(2, \vartheta) \)
+  - Hybrid MCMC:
+    - Gibbs-sampling för \( \lambda, \theta \)
+    - Metropolis–Hastings för brytpunkter \( t_i \)
+  - Testade slumpmässiga och Beta-baserade förslagsfördelningar.
+
+- **Del 2: Hamiltonian Monte Carlo (HMC)**
+  - Modell: \( y_i \sim N(\theta_1^2 + \theta_2^2, \sigma^2) \)
+  - HMC implementerades med Leapfrog-integrator (stegstorlek \( \epsilon \), antal steg \( L \)).
+  - Jämfördes mot vanlig Metropolis–Hastings med bivariata normalförslag.
+  - Parametrar: \( \sigma = 2, \Sigma = \text{diag}(5, 0.5) \)
+
+---
+
+## Resultat
+- MCMC-kedjan för kolgruveproblemet konvergerade snabbt för 2–3 brytpunkter.
+- HMC visade effektivare utforskning av posteriorytan jämfört med vanlig MH:
+  - Högre acceptansgrad och lägre autokorrelation.
+  - Bra balans mellan stegstorlek och antal Leapfrog-steg.
+- Posteriorens form visualiserades i 2D som en ringformad densitet.
+
+---
+
+## Lärdomar
+- Förståelse för hybrid MCMC och dess stabilitet vid komplexa posteriors.  
+- Implementering av HMC med praktisk parameterkalibrering.  
+- Jämförelse av MCMC-metoder med avseende på effektivitet och mixing.  
+
+---
+
+📄 [Full report – MCMC and HMC for Bayesian Inference (KTH, 2025)](./MCMC_report.pdf)
