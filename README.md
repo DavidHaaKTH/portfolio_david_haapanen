@@ -32,13 +32,11 @@ Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
 - Ensemble-metoder: Random Forest, AdaBoost
 - Model selection och cross-validation
 - Feature engineering och dimensionalitetsreduktion (PCA)
-- Utvärderingsmått: R², RMSE, MAPE, F1-score, ROC, confusion matrix
 
 ### 🔹 Statistisk modellering
 - Generalized Linear Models (GLM)
 - Hypotestestning och konfidensintervall
 - Multikollinearitetsanalys (VIF)
-- Variabeltransformation och residualanalys
 
 ### 🔹 Optimering och beslutsanalys
 - Marginal Allocation och Dynamic Programming
@@ -49,7 +47,6 @@ Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
 ### 🔹 Numerisk analys och simulering
 - Monte Carlo-simuleringar (SMC, MCMC)
 - Approximation och stokastisk modellering
-- Regressionsanalys med Python och R
 
 ---
 
