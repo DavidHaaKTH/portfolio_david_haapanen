@@ -1,13 +1,14 @@
 # Heart Failure Classification using Machine Learning
 
-**Typ:** Kursprojekt inom maskininlärning (KTH, 2025)  
+**Typ:** Kursprojekt inom kursen Modern Methods of Statistical Learning (KTH, 2025)  
 **Roll:** Grupparbete – ansvarade gemensamt för **databehandling, modellträning och utvärdering**, samt hade huvudansvar av Gaussian Process modellen.
+
 
 **Språk:** Python  
 ---
 
 ## Syfte
-Att utveckla och utvärdera maskininlärningsmodeller för att **förutsäga hjärtsvikt** baserat på patientdata (demografiska, kliniska och laboratoriska variabler).
+Att utveckla och utvärdera maskininlärningsmodeller med fokus på **noggrannhet, robusthet och generaliseringsförmåga** för att **förutsäga hjärtsvikt** baserat på patientdata. 
 
 ---
 
