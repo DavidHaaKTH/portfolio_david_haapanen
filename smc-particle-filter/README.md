@@ -36,10 +36,9 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 - Visualisering av partikelfördelning och trajektorier visade god konvergens mot sann position.
 
 ## Resultat
-- SIS-metoden visade tydlig **viktdegeneration** (låg Effective Sample Size, ESS).
-- SISR-metoden gav stabila estimatorer och följde målets bana väl.
+- SIS-metoden visade tydlig **viktdegeneration**.
+- SISR-metoden implimenterades för att åtgärdade problemet.
 - Optimalt parameterestimat med från ML (log-likelihood-svep): **ζ̂ ≈ 2.20**.
-- Visualiseringar av partiklar och trajektoria visar god konvergens mot sann position.
 
 ### Visualiseringar
 
