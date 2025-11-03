@@ -20,7 +20,7 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 ## Metod och implementation
 
 ### Problemformulering
-- Nio olika **Line Replaceable Units (LRU)**, **s**=[s<sub>1,...,s<sub>9], representerar komponenter som hjul, motorer och radar.  
+- Nio olika **Line Replaceable Units (LRU)**, **s**=[s<sub>1</sub>,...,s<sub>9</sub>], representerar komponenter som hjul, motorer och radar.  
 - Varje komponenttyp har:
   - **λ**: felhastighet  
   - **T**: genomsnittlig reparationstid  
