@@ -15,24 +15,24 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 ## Metod och implementation
 - **Modellering:**
-  - Modellen för position och hastighet var grundat ur ett stokastiskt system med Gaussian noise.
-  - Observationsmodell baserad på signalstyrka $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n `$.
+  - Modellen för position och hastighet var grundat ur ett stokastiskt system med Gaussian noise: $` \mathbf{X}_{n+1} = \boldsymbol{\Phi} \mathbf{X}_n + \boldsymbol{\Psi}_z \mathbf{Z}_n + \boldsymbol{\Psi}_w \mathbf{W}_{n+1}, \quad n \in \mathbb{N}`$.
+  - Observationsmodell baserad på signalstyrka: $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n `$.
   - Antal basstationer: 6  
 - **Algoritmer:**
   - Implementerade både **Sequential Importance Sampling (SIS)** och **Sequential Importance Sampling with Resampling (SISR)**.
-  - Estimerade \(\tau_n = E[X_n | Y_{0:n}]\) via partiklar \((X_n^{(i)}, \omega_n^{(i)})\).
+  - Estimerade $`\tau_n = E[X_n | Y_{0:n}]\) via partiklar \((X_n^{(i)}, \omega_n^{(i)})`$.
 - **Kalibrering av modellparametrar:**
-  - Approximerad maximum likelihood-estimering av observationsbrusets standardavvikelse \( \sigma \in (0,3) \).
+  - Approximerad maximum likelihood-estimering av observationsbrusets standardavvikelse $`\sigma \in (0,3)`$.
   - Likelihood beräknad punktvis via Monte Carlo-approximation.
-- **Antal partiklar:** \(N = 10\,000\)  
+- **Antal partiklar:** $`N = 10\,000`$ 
 - **Implementation:** Fullt vektoriserad MATLAB-kod för effektivitet.
 
 ---
 
 ## Resultat
-- SIS-metoden visade hög viktdegeneration (lågt effektivt sampel).
-- SISR-metoden gav stabila estimat och korrekt följning av målets bana.
-- Optimal parameterestimat \( \hat{\sigma} \approx ... \) (från rapport).
+- SIS-metoden visade hög viktdegeneration (låg effecive sample rate).
+- SISR-metoden gav stabila estimeringar och korrekt följning av målets bana.
+- Optimal parameterestimat $` \hat{\sigma} \approx ... `$.
 - Visualisering av partikelfördelning och trajektorier visade god konvergens mot sann position.
 
 ---
