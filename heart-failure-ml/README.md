@@ -1,17 +1,24 @@
 # Heart Failure Classification using Machine Learning
 
 **Typ:** Kursprojekt inom kursen Modern Methods of Statistical Learning (KTH, 2025)  
-**Roll:** Grupparbete – ansvarade gemensamt för **databehandling, modellträning och utvärdering**, samt hade huvudansvar av Gaussian Process modellen.
+**Roll:** Ansvarade för modellering, utvärdering och rapportskrivning tillsammans med projektgrupp 
 
 
 **Språk:** Python  
 ---
 
 ## Syfte
-Att utveckla och utvärdera maskininlärningsmodeller med fokus på **noggrannhet, robusthet och generaliseringsförmåga** för att **förutsäga hjärtsvikt** baserat på patientdata. 
+Syftet med projektet var att utveckla och jämföra flera maskininlärningsmodeller för att **förutsäga hjärtsvikt baserat på patientdata**, fokus låg på noggrannhet och generaliseringsförmåga.
 
 ---
 
+## Dataset
+- **Källa:** [Heart Failure Prediction Dataset (Kaggle)](https://www.kaggle.com/fedesoriano/heart-failure-prediction)  
+- **Antal observationer:** 918 patienter  
+- **Antal variabler:** 11 (ålder, kön, blodtryck, kolesterol, m.m.)  
+- **Målfunktion:** Binär etikett (1 = hjärtsvikt, 0 = ingen hjärtsvikt)
+
+---
 ## Metod
 - Dataförberedelse: hantering av saknade värden, standardisering och kodning av kategoriska variabler.  
 - Feature-reduktion med PCA för att minska dimension och brus.  
