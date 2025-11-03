@@ -1,6 +1,6 @@
 # Optimization of Spare Parts Allocation using Marginal Allocation and Dynamic Programming
 
-**Typ:** Projekt inom kursen Systems Engineering, KTH 2024  
+**Typ:** Projekt inom kursen *Systems Engineering, KTH 2024*  
 **Roll:** Implementation av optimeringsalgoritmer, simulering och rapportskrivning i sammarbete med projektpartner
 
 
