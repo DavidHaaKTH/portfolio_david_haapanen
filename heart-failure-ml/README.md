@@ -86,6 +86,5 @@ Nedan följer huvudstegen:
 ---
 
 ## Rapport
-Hela projektet finns dokumenterat i rapporten:  
 📄 [Prediction of Heart Failure using Machine Learning Methods (KTH, 2025)](./Heart_failure_classification.pdf)
 
