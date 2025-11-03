@@ -19,17 +19,47 @@ Syftet med projektet var att utveckla och jämföra flera maskininlärningsmodel
 - **Målfunktion:** Binär etikett (1 = hjärtsvikt, 0 = ingen hjärtsvikt)
 
 ---
-## Metod
-- Dataförberedelse: hantering av saknade värden, standardisering och kodning av kategoriska variabler.  
-- Feature-reduktion med PCA för att minska dimension och brus.  
-- Modellträning med:  
-  - Logistic Regression  
-  - k-Nearest Neighbors  
-  - Random Forest  
-  - Support Vector Machine  
-  - Neural Network  
-- Modellval baserat på korsvaliderad noggrannhet och F1-score.  
-- Utvärdering via confusion matrix och ROC-kurvor.
+## Metod och implementation
+
+Arbetsflödet implementerades som en **ML-pipeline** i Python (scikit-learn).  
+Nedan följer huvudstegen:
+
+1. **Datapreparation**
+   - Separering av features och målvariabel  
+   - Stratifierad 80/20 train–test-split  
+   - Inga saknade värden upptäcktes  
+
+2. **Förbehandling**
+   - **Numeriska variabler:** Standardiserades med `StandardScaler`  
+   - **Kategoriska variabler:** Enkodades med `OneHotEncoder`  
+   - Båda stegen kombinerades via `ColumnTransformer` och inkluderades i en `Pipeline`  
+
+3. **Dimensionalitetsreduktion**
+   - **PCA** tillämpades för vissa modeller (särskilt k-NN) för att minska effekten av hög dimension och förbättra beräkningshastighet.
+
+4. **Modellering**
+   Följande klassificeringsmetoder implementerades och jämfördes:
+   - k-Nearest Neighbors (k-NN)  
+   - k-NN med PCA  
+   - Decision Tree  
+   - Random Forest  
+   - AdaBoost  
+   - Neural Network (MLP)  
+   - Support Vector Machine (SVM)  
+   - Gaussian Process Classifier  
+
+5. **Hyperparametertuning och validering**
+   - 10-fold cross-validation på träningsdata  
+   - Grid search användes för att identifiera optimala parametrar  
+
+6. **Utvärderingsmått**
+   - **Accuracy**  
+   - **Precision**  
+   - **Recall**  
+   - **F1-score**  
+   - **Confusion matrix**
+
+---
 
 ---
 
