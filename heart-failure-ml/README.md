@@ -1,9 +1,9 @@
 # Heart Failure Classification using Machine Learning
 
 **Typ:** Kursprojekt inom maskininlärning (KTH, 2025)  
-**Roll:** Grupparbete – jag ansvarade för **databehandling, modellträning och utvärdering**.  
-**Språk:** Python  
+**Roll:** Grupparbete – ansvarade gemensamt för **databehandling, modellträning och utvärdering**, samt hade huvudansvar av Gaussian Process modellen.
 
+**Språk:** Python  
 ---
 
 ## Syfte
