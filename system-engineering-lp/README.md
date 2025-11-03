@@ -19,13 +19,13 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 
 ## Metod och implementation
 
-### 1️⃣ Problemformulering
+### Problemformulering
 - Nio olika **Line Replaceable Units (LRU)** representerar komponenter som hjul, motorer och radar.  
 - Varje komponenttyp har:
   - **λ**: felhastighet  
   - **T**: genomsnittlig reparationstid  
   - **c**: inköpskostnad  
-- Målet: minimera \(EBO(s)\) under budgetbegränsningen \(C(s) \leq C_{budget}\).  
+- Målet: minimera \(EBO(**s**)\) under budgetbegränsningen \(C(**s**) =< C_{budget}\).  
 
 ### 2️⃣ Marginal Allocation (MA)
 - Utvärderade **hur EBO minskar** när nya reservdelar läggs till.  
