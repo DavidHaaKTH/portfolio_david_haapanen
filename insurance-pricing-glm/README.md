@@ -49,7 +49,8 @@ Projektet visade att **ålder, region och kreditrating** hade starkast samband m
 
 ## Lärdomar
 - Praktisk tillämpning av **GLM-metodik** för prediktiv prissättning.  
-- Betydelsen av **modellurval** och risk för överanpassning i försäkringsdata.  
+- Betydelsen av **modellurval** för att undvika överanpassning.
+- Övervägning och gruppering av tariffer med hjälp av försäkringsdata.  
 - Hur man kombinerar statistisk teori med **affärsrelevanta beslut** inom försäkring och riskanalys.
 
 ---
