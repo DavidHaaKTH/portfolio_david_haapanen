@@ -14,13 +14,13 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 ---
 
 ## Metod och implementation
-- **Modellering:**
-  - Modellen för position och hastighet var grundat ur ett stokastiskt system med Gaussian noise: $` \mathbf{X}_{n+1} = \boldsymbol{\Phi} \mathbf{X}_n + \boldsymbol{\Psi}_z \mathbf{Z}_n + \boldsymbol{\Psi}_w \mathbf{W}_{n+1}, \quad n \in \mathbb{N}`$.
-  - Observationsmodell baserad på signalstyrka: $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n `$.
+- **Modellering:** för varje diskret tidpunkt $`n`$
+  - Modellen för position $`\mathbf{X}_{n}`$ och hastighet var grundat ur ett stokastiskt system med Gaussian noise.
+  - Observationsmodell baserad på signalstyrka $`\mathbf{Y}_{n}`$.
   - Antal basstationer: 6  
 - **Algoritmer:**
   - Implementerade både **Sequential Importance Sampling (SIS)** och **Sequential Importance Sampling with Resampling (SISR)**.
-  - Estimerade $`\tau_n = E[X_n | Y_{0:n}]\) via partiklar \((X_n^{(i)}, \omega_n^{(i)})`$.
+  - Estimerade väntevärdet av fordenets position för varje diskret tidsteg: $`\tau_n = E[X_n | Y_{0:n}]\) via partiklar \((X_n^{(i)}, \omega_n^{(i)})`$.
 - **Kalibrering av modellparametrar:**
   - Approximerad maximum likelihood-estimering av observationsbrusets standardavvikelse $`\sigma \in (0,3)`$.
   - Likelihood beräknad punktvis via Monte Carlo-approximation.
