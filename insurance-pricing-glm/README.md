@@ -56,7 +56,6 @@ Projektet visade att **ålder, region och kreditrating** hade starkast samband m
 
 ---
 
-### Rapport
-Hela rapporten finns tillgänglig här:  
+### Rapport 
 📄 [Insurance Pricing using GLM – Regression Analysis Project (KTH, 2025)](./Insurance_GLM_Report.pdf)
 
