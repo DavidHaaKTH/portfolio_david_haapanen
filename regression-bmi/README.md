@@ -52,6 +52,6 @@ Utvecklingen av den slutgiltiga regressionsmodellen genomfördes stegvis enligt 
 
 ### Rapport
 Hela rapporten finns tillgänglig här:  
-📄 [Insurance Pricing using GLM – Regression Analysis Project (KTH, 2025)](./Insurance_GLM_Report.pdf)
+📄 [Prediction of BMI using MLR – Regression Analysis Project (KTH, 2025)](./Regression_BMI_Report.pdf)
 
 
