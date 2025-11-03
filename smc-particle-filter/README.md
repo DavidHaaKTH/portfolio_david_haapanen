@@ -45,13 +45,14 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 *Färdrutt (SIS vs. SISR)* 
 <p align="center">
-  <img src="SIS_norm.png" width="300" alt="Estimated vs true trajectory (SISR)">'
-  <img src="trajectory_SISR.png" width="300" alt="Estimated vs true trajectory (SISR)">
+  <img src="SIS_norm.png" width="400">'
+  <img src="trajectory_SISR.png" width="400"">
 </p>
 
-**Viktdegenerering (ESS över tiden)**  
+*Viktdegenerering (SIS vs. SISR)*  
 <p align="center">
-  <img src="img/ess_over_time.png" width="650" alt="Effective Sample Size over time">
+  <img src="weight_hist_SIS.png" width="400">'
+  <img src="weight_hist,SISR.png" width="400"">
 </p>
 
 **Parameter­svep och optimum (ζ̂ ≈ 2.20)**  
