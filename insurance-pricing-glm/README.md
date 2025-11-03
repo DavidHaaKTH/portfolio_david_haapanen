@@ -1,6 +1,6 @@
 # Pricing of Insurance Premiums using Generalized Linear Models (GLM)
 
-**Typ:** Projekt inom kursen Regressionsanalys (KTH, 2025)  
+**Typ:** Projekt inom kursen *Regression analysis (KTH, 2025)*  
 **Roll:** Ansvarade för modellering, implementation i Python, resultatvisualisering och rapport skrivning
 
 **Språk:** Python  
