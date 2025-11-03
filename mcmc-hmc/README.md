@@ -2,6 +2,8 @@
 
 **Typ:** Projekt inom kursen *Computer Intensive Methods in Mathematical Statistics (KTH, 2025)*  
 **Roll:** Implementering av Gibbs-, Metropolis-Hastings- och Hamiltonian Monte Carlo-metoder  
+
+
 **Språk:** MATLAB  
 
 ---
