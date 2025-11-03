@@ -16,7 +16,7 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 ## Metod och implementation
 - **Modellering:**
   - Modellen för position och hastighet var grundat ur ett stokastiskt system med Gaussian noise.
-  - Observationsmodell baserad på signalstyrka $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n \)$`.
+  - Observationsmodell baserad på signalstyrka $` Y_n = \nu - 10 \eta \log_{10}(\|X_n - \pi_\ell\|) + V_n `$.
   - Antal basstationer: 6  
 - **Algoritmer:**
   - Implementerade både **Sequential Importance Sampling (SIS)** och **Sequential Importance Sampling with Resampling (SISR)**.
