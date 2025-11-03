@@ -1,7 +1,8 @@
 # Predictive Modeling using Multiple Linear Regression (BMI Case Study)
 
 **Typ:** Projekt inom kursen Regressionsanalys (KTH, 2025)  
-**Roll:** Ansvarade för databehandling, modellering och resultatpresentation  
+**Roll:** Ansvarade för databehandling, modellering, resultatpresentation och rapport skrivning
+
 **Språk:** R  
 
 ---
