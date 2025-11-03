@@ -71,5 +71,5 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 - Insikt i parameterestimering via Monte Carlo-baserad likelihoodapproximation.
 
 ---
-##Rapport
+## Rapport
 📄 [Sequential Monte Carlo Mobility Tracking (KTH, 2025)](./SMC_Report.pdf)
