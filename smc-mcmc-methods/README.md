@@ -9,8 +9,7 @@
 ---
 
 ## Syfte
-Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder för att uppskatta rörelsebanor för ett rörligt objekt baserat på mottagna signalstyrkor (RSSI) från basstationer i ett mobilnät.  
-Projektet utgick från en **Hidden Markov Model (HMM)** där position, hastighet och acceleration modellerades, och målet var att använda partikelfilter för att estimera positioner i realtid.
+Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder för att uppskatta rörelsebanor för ett rörligt objekt baserat på mottagna signalstyrkor (RSSI) från basstationer i ett mobilnät. Projektet utgick från en **Hidden Markov Model (HMM)** där position, hastighet och acceleration modellerades, och målet var att använda partikelfilter för att estimera positioner i realtid.
 
 ---
 
