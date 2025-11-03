@@ -22,7 +22,7 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
   - Implementerade både **Sequential Importance Sampling (SIS)** och **Sequential Importance Sampling with Resampling (SISR)**.
   - Estimerade väntevärdet av fordenets position för varje diskret tidsteg: $`\tau_n = E[X_n | Y_{0:n}]`$ via partiklar $`(X_n^{(i)}, \omega_n^{(i)})`$.
 - **Kalibrering av modellparametrar:**
-  - Approximerad maximum likelihood-estimering av observationsbrusets standardavvikelse $`\sigma \in (0,3)`$.
+  - Approximerad maximum likelihood-estimering av observationsbrusets standardavvikelse $`\zeta \in (0,3)`$.
   - Likelihood beräknad punktvis via Monte Carlo-approximation.
 - **Antal partiklar:** $`N = 10\,000`$ 
 - **Implementation:** Fullt vektoriserad MATLAB-kod för effektivitet.
@@ -32,7 +32,7 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 ## Resultat
 - SIS-metoden visade hög viktdegeneration (låg effecive sample rate).
 - SISR-metoden gav stabila estimeringar och korrekt följning av målets bana.
-- Optimal parameterestimat $` \hat{\sigma} \approx 2.20 `$.
+- Optimal parameterestimat $` \hat{\zeta} \approx 2.20 `$.
 - Visualisering av partikelfördelning och trajektorier visade god konvergens mot sann position.
 
 ---
@@ -44,4 +44,4 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 
 ---
 
-📄 [Full report – Sequential Monte Carlo Mobility Tracking (KTH, 2025)](./SMC_report.pdf)
+📄 [Full report – Sequential Monte Carlo Mobility Tracking (KTH, 2025)](./SMC_Report.pdf)
