@@ -35,6 +35,42 @@ Syftet med projektet var att tillämpa **Sequential Monte Carlo (SMC)**-metoder 
 - Optimal parameterestimat $` \hat{\zeta} \approx 2.20 `$.
 - Visualisering av partikelfördelning och trajektorier visade god konvergens mot sann position.
 
+## Resultat
+- SIS-metoden visade tydlig **viktdegeneration** (låg Effective Sample Size, ESS).
+- SISR-metoden gav stabila estimatorer och följde målets bana väl.
+- Optimalt parameterestimat med från ML (log-likelihood-svep): **ζ̂ ≈ 2.20**.
+- Visualiseringar av partiklar och trajektoria visar god konvergens mot sann position.
+
+### Visualiseringar
+
+**Trajektoria (sann vs. estimerad, SISR)**  
+<p align="center">
+  <img src="img/trajectory_sisr.png" width="650" alt="Estimated vs true trajectory (SISR)">
+</p>
+
+**Viktdegenerering (ESS över tiden)**  
+<p align="center">
+  <img src="img/ess_over_time.png" width="650" alt="Effective Sample Size over time">
+</p>
+
+**Parameter­svep och optimum (ζ̂ ≈ 2.20)**  
+<p align="center">
+  <img src="img/loglik_vs_zeta.png" width="650" alt="Log-likelihood vs zeta showing optimum around 2.20">
+</p>
+
+<!-- Alternativ: två bilder sida vid sida (om du vill komprimera layouten)
+<p float="left">
+  <img src="img/trajectory_sisr.png" width="49%" alt="Trajectory SISR" />
+  <img src="img/ess_over_time.png" width="49%" alt="ESS over time" />
+</p>
+-->
+
+### Kort tolkning
+- **ESS** dyker snabbt för **SIS** → viktdegeneration; **SISR** återställer mångfald via resampling.  
+- **SISR-trajektorian** ligger nära sann bana efter initial transients.  
+- **ζ-svep** ger tydligt maximum kring **ζ̂ ≈ 2.20**, vilket stödjer det valda bruset i observationsmodellen.
+
+
 ---
 
 ## Lärdomar
