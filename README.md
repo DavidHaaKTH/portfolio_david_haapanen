@@ -17,7 +17,7 @@ Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, ri
 |----------|------------------|
 | [**ANN** - *Prediction of Waste Generation in the EU*](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
 | [**GLM** - *Insurance Pricing Model (If Insurance)*](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
-| [**Classification with ML* - *Heart Failure*](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
+| [**Classification with ML** - *Heart Failure*](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
 | [**Optimization** - *Allocation of Aircraft Spare Parts*](./system-engineering-lp) | Optimeringsmodell (MA + DP) för reservdelsallokering och kostnads–nytta-analys. |
 | [**SMC** - *Mobility Tracking*](./smc-particle-filter) | Sekventiell spårning av fordon |
 | [**MCMC and HMC** - *Bayesian Inference*](./mcmc-hmc) | Implementering av Monte Carlo metoder för att ta fram posterior fördelningar |
