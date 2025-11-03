@@ -20,12 +20,12 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 ## Metod och implementation
 
 ### Problemformulering
-- Nio olika **Line Replaceable Units (LRU)** representerar komponenter som hjul, motorer och radar.  
+- Nio olika **Line Replaceable Units (LRU)**, **s**=[s<sub>1,...,s<sub>9], representerar komponenter som hjul, motorer och radar.  
 - Varje komponenttyp har:
   - **λ**: felhastighet  
   - **T**: genomsnittlig reparationstid  
   - **c**: inköpskostnad  
-- Målet: minimera \(EBO(**s**)\) under budgetbegränsningen \(C(**s**) ≤ C_budget\).  
+- Målet: minimera \(EBO(**s**)\) under budgetbegränsningen \(C(**s**) ≤ C<sub>budget</sub>\).  
 
 ### Marginal Allocation (MA)
 - Utvärderade **hur EBO minskar** när nya reservdelar läggs till.  
@@ -45,25 +45,25 @@ Uppgiften modellerade hur ett flygbaslager bör dimensioneras för att minimera 
 ## Resultat
 
 ### Effektiva punkter vid tillämpning av Marginal Allocation  
-Budget: C<sub>budget</sub> = 500  
+C<sub>budget</sub> = 500 kr  
 
 | **Eff. Point** | **s₁** | **s₂** | **s₃** | **s₄** | **s₅** | **s₆** | **s₇** | **s₈** | **s₉** | **EBO(s)** | **C(s)** |
 |:--------------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:----------:|:--------:|
-| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.7120 | 0 |
-| 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 6.9148 | 21 |
-| 3 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 6.6289 | 32 |
-| 4 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 6.2943 | 45 |
-| 5 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 5.7436 | 68 |
-| 6 | 1 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 5.2699 | 89 |
-| 7 | 1 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 4.9490 | 106 |
-| 8 | 1 | 1 | 1 | 2 | 1 | 1 | 0 | 0 | 0 | 4.2654 | 159 |
-| 9 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 0 | 0 | 3.3514 | 235 |
-| 10 | 1 | 1 | 1 | 3 | 1 | 1 | 1 | 0 | 0 | 3.1359 | 256 |
-| 11 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 0 | 0 | 2.4329 | 332 |
-| 12 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 0 | 1 | 2.2223 | 355 |
-| 13 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 1 | 1 | 1.9307 | 387 |
-| 14 | 1 | 1 | 2 | 3 | 1 | 1 | 2 | 1 | 1 | 1.7395 | 410 |
-| 15 | 1 | 1 | 2 | 3 | 1 | 2 | 2 | 1 | 1 | **1.4200** | **463** |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7.71 | 0 |
+| 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 6.91 | 21 |
+| 3 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 6.63 | 32 |
+| 4 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 6.29 | 45 |
+| 5 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 5.74 | 68 |
+| 6 | 1 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 5.27 | 89 |
+| 7 | 1 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 4.95 | 106 |
+| 8 | 1 | 1 | 1 | 2 | 1 | 1 | 0 | 0 | 0 | 4.27 | 159 |
+| 9 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 0 | 0 | 3.35 | 235 |
+| 10 | 1 | 1 | 1 | 3 | 1 | 1 | 1 | 0 | 0 | 3.14 | 256 |
+| 11 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 0 | 0 | 2.43 | 332 |
+| 12 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 0 | 1 | 2.22 | 355 |
+| 13 | 1 | 1 | 1 | 3 | 1 | 1 | 2 | 1 | 1 | 1.93 | 387 |
+| 14 | 1 | 1 | 2 | 3 | 1 | 1 | 2 | 1 | 1 | 1.74 | 410 |
+| 15 | 1 | 1 | 2 | 3 | 1 | 2 | 2 | 1 | 1 | **1.42** | **463** |
 
 | **Budget** | **Optimal konfiguration** | **EBO(s)** | **Kostnad** |
 |-------------|---------------------------|-------------|-------------:|
