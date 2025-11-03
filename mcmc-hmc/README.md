@@ -21,7 +21,7 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
   - Hybrid MCMC:
     - Gibbs-sampling för $` \lambda, \theta `$
     - Metropolis–Hastings för brytpunkter $` t_i `$, med en random walk propsal
-  - Testade slumpmässiga och Beta-baserade förslagsfördelningar.
+  - Testade olika värden för $` \vartheta `$ och antal brytpunkter.
 
 - **Del 2: Hamiltonian Monte Carlo (HMC)**
   - Modell: $` y_i \sim N(\theta_1^2 + \theta_2^2, \sigma^2) `$
