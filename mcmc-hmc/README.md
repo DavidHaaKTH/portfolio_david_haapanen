@@ -9,7 +9,7 @@
 
 ## Syfte
 Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder för två olika problem:
-1. **Bayesiansk analys av kolgruveexplosioner**: sampling från en posterior fördelning med flera brytpunkter.
+1. **Bayesiansk analys av kolgruveexplosioner**: sampling från en posterior fördelning med flera brytpunkter m.h.a hybrid sampling.
 2. **Hamiltonian Monte Carlo (HMC)**: för sampling från cirkulär formad posterior fördelning.
 
 ---
@@ -20,14 +20,14 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
   - Priors: $` \lambda_i \sim \Gamma(2, \theta), \ \theta \sim \Gamma(2, \vartheta) `$
   - Hybrid MCMC:
     - Gibbs-sampling för $` \lambda, \theta `$
-    - Metropolis–Hastings för brytpunkter $` t_i `$, med en random walk propsal
-  - Testade olika värden för $` \vartheta `$ och antal brytpunkter.
+    - Metropolis–Hastings för brytpunkter $` t_i `$, med en random walk propsal.
+  - Testade olika värden för $` \vartheta `$ och olika antal brytpunkter.
 
 - **Del 2: Hamiltonian Monte Carlo (HMC)**
   - Modell: $` y_i \sim N(\theta_1^2 + \theta_2^2, \sigma^2) `$
   - HMC implementerades med Leapfrog-integrator (stegstorlek $` \epsilon `$, antal steg $` L `$).
-  - Jämfördes mot vanlig Metropolis–Hastings med en bivariate randomwalk proposal, med parametrar: $` \sigma = 2, \Sigma = \text{diag}(5, 0.5) `$
-  - Utvärdering och jämförelse mellan metoderna baserades på hur acceptance rate och autokorrelation mellan samples
+  - Jämfördes mot vanlig Metropolis–Hastings med en bivariate randomwalk proposal, med parametrar: $` \sigma = 2, \Sigma = \text{diag}(5, 0.5) `$.
+  - Utvärdering och jämförelse mellan metoderna baserades på acceptance rate och autokorrelation mellan samples. 
 
 ---
 
