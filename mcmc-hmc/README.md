@@ -49,12 +49,14 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 - **MH** (t.ex. $``\zeta=0.35``$) gav **acc ≈ 32 %** men långsam **ACF-decay** → hög autokorrelation.  
 - 2D-densitet: HMC återger en jämn, cirkulär posterior medans MH gav upphov till en ojämn täckning.
 
-**Figurer**: *HMC vs. MH* – posterior och autokorrelation 
+**Figurer**: *HMC vs. MH* – posterior och autokorrelation
+-*HMC*
 <p float="left">
   <img src="HMC_theta_dist.png" width="49%">
   <img src="HMC2D.png" width="49%">
   <img src="autocorrHMC.png" width="49%">
 </p>
+-*MH* 
 <p float="left">
   <img src="MH3D.png" width="49%">
   <img src="MH2D.png" width="49%">
