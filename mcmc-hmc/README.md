@@ -26,7 +26,7 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 - **Del 2: Hamiltonian Monte Carlo (HMC)**
   - Modell: $` y_i \sim N(\theta_1^2 + \theta_2^2, \sigma^2) `$
   - HMC implementerades med Leapfrog-integrator (stegstorlek $` \epsilon `$, antal steg $` L `$).
-  - Jämfördes mot vanlig Metropolis–Hastings med en bivariate randomwalk proposal, med parametrar: $` \sigma = 2, \Sigma = \text{diag}(5, 0.5) `$. Kandidater var dragna utifrån $``\mathbf{\theta^*} \sim N_2(\mathbf{\theta},\vartheta^2I_{2x2})``$ där $``\vartheta^ > 0``$.
+  - Jämfördes mot vanlig Metropolis–Hastings med en bivariate randomwalk proposal, med parametrar: $` \sigma = 2, \Sigma = \text{diag}(5, 0.5) `$. Kandidater var dragna utifrån $``\mathbf{\theta^*} \sim N_2(\mathbf{\theta},\zeta^2I_{2x2})``$ där $``\zeta^ > 0``$.
   - Utvärdering och jämförelse mellan metoderna baserades på acceptance rate och autokorrelation mellan samples för varierande värden för $` \epsilon `$, antal steg $` L `$)
 
 ---
