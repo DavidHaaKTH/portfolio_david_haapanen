@@ -51,7 +51,7 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 
 **Figurer**: – posterior och autokorrelation
 
-*HMC*
+**HMC**
 
 <p float="left">
   <img src="HMC_theta_dist.png" width="49%">
@@ -59,7 +59,7 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
   <img src="autocorrHMC.png" width="49%">
 </p>
 
-*MH* 
+**MH** 
 
 <p float="left">
   <img src="MH3D.png" width="49%">
@@ -77,4 +77,4 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 
 ---
 
-📄 [Full report – MCMC and HMC for Bayesian Inference (KTH, 2025)](./MCMC_report.pdf)
+📄 [Full report – MCMC and HMC for Bayesian Inference (KTH, 2025)](./MCMC_HMC_Report.pdf)
