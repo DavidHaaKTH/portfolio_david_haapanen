@@ -45,8 +45,8 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 - MH-mixning var känslig för $``\rho``$, där en god balans uppstod för $``\rho\approx1.25``$ (acceptans runt ~30 %).
 
 **HMC vs MH:**
-- **HMC** (t.ex. $``\varepsilon=0.09, L=25``$) gav **acc ≈ 77 %** och snabb **ACF-decay** för $``(\theta_1,\theta_2)``$.  
-- **MH** (t.ex. $``\zeta=0.35``$) gav **acc ≈ 32 %** men långsam **ACF-decay** → hög autokorrelation.  
+- **HMC** ($``\varepsilon=0.09, L=25``$) gav **acc ≈ 77 %** och snabb **ACF-decay** för $``(\theta_1,\theta_2)``$.  
+- **MH** ($``\zeta=0.35``$) gav **acc ≈ 32 %** men långsam **ACF-decay** → hög autokorrelation.  
 - 2D-densitet: HMC återger en jämn, cirkulär posterior medans MH gav upphov till en ojämn täckning.
 
 **Figurer**: – posterior och autokorrelation
