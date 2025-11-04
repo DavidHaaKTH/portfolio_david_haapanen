@@ -51,7 +51,7 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 
 **Figurer**: *HMC vs. MH* – posterior och autokorrelation 
 <p float="left">
-  <img src="HMC3D.png" width="49%">
+  <img src="HMC_theta_dist.png" width="49%">
   <img src="HMC2D.png" width="49%">
   <img src="autocorrHMC.png" width="49%">
 </p>
