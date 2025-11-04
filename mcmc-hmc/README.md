@@ -41,15 +41,23 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 
 **Coal mine (hybrid MCMC):**
 - Antalet brytpunkter $``t``$ separerat tydligt intensiteter $``\lambda``$ vid få brytpunkter, men överlappning tillkommer snabbt ju fler brytpunkter som introduceras.
-- $``\vartheta``$ påverkar främst posteriorn för $``\theta``$; $``t,\lambda``$ relativt stabila över $``\vartheta\in\{1,10,100\}``.
+- $``\vartheta``$ påverkar främst posteriorn för $``\theta``$.
 - MH-mixning var känslig för $``\rho``$, där en god balans uppstod för $``\rho\approx1.25``$ (acceptans runt ~30 %).
 
 **HMC vs MH:**
 - **HMC** (t.ex. $``\varepsilon=0.09, L=25``$) gav **acc ≈ 77 %** och snabb **ACF-decay** för $``(\theta_1,\theta_2)``$.  
 - **MH** (t.ex. $``\zeta=0.35``$) gav **acc ≈ 32 %** men långsam **ACF-decay** → hög autokorrelation.  
-- 2D-densitet: HMC återger en jämn, cirkulär posterior; MH visar ojämn täckning.
+- 2D-densitet: HMC återger en jämn, cirkulär posterior medans MH gav upphov till en ojämn täckning.
 
-
+**Figurer**: *HMC vs. MH* – posterior och autokorrelation 
+<p float="left">
+  <img src="img/posterior_hmc_2d.png" width="49%" alt="2D posterior density (HMC)">
+  <img src="img/posterior_mh_2d.png" width="49%" alt="2D posterior density (MH)">
+</p>
+<p float="left">
+  <img src="img/acf_hmc.png" width="49%" alt="ACF for theta (HMC)">
+  <img src="img/acf_mh.png" width="49%" alt="ACF for theta (MH)">
+</p>
 ---
 
 ## Lärdomar
