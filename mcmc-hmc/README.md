@@ -51,13 +51,17 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 
 **Figurer**: *HMC vs. MH* – posterior och autokorrelation 
 <p float="left">
-  <img src="img/posterior_hmc_2d.png" width="49%" alt="2D posterior density (HMC)">
-  <img src="img/posterior_mh_2d.png" width="49%" alt="2D posterior density (MH)">
+  <img src="HMC3D.png" width="49%">
+  <img src="HMC2D.png" width="49%">
+  <img src="autocorrHMC.png" width="49%">
 </p>
 <p float="left">
-  <img src="img/acf_hmc.png" width="49%" alt="ACF for theta (HMC)">
-  <img src="img/acf_mh.png" width="49%" alt="ACF for theta (MH)">
+  <img src="MH3D.png" width="49%">
+  <img src="MH2D.png" width="49%">
+  <img src="autocorrMH.png" width="49%">
 </p>
+
+
 ---
 
 ## Lärdomar
