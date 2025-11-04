@@ -35,7 +35,20 @@ Projektet syftade till att tillämpa **Markov Chain Monte Carlo (MCMC)**-metoder
 - MCMC-kedjan för kolgruveproblemet konvergerade snabbt för 2–3 brytpunkter.
 - HMC visade effektivare utforskning av posteriorytan jämfört med vanlig MH:  
   - Högre aacceptance rate och lägre autokorrelation.  
-  - Bra balans mellan stegstorlek och antal Leapfrog-steg.  
+  - Bra balans mellan stegstorlek och antal Leapfrog-steg.
+
+## Resultat
+
+**Coal mine (hybrid MCMC):**
+- Antalet brytpunkter $``t``$ separerat tydligt intensiteter $``\lambda``$ vid få brytpunkter, men överlappning tillkommer snabbt ju fler brytpunkter som introduceras.
+- $``\vartheta``$ påverkar främst posteriorn för $``\theta``$; $``t,\lambda``$ relativt stabila över $``\vartheta\in\{1,10,100\}``.
+- MH-mixning var känslig för $``\rho``$, där en god balans uppstod för $``\rho\approx1.25``$ (acceptans runt ~30 %).
+
+**HMC vs MH:**
+- **HMC** (t.ex. $``\varepsilon=0.09, L=25``$) gav **acc ≈ 77 %** och snabb **ACF-decay** för $``(\theta_1,\theta_2)``$.  
+- **MH** (t.ex. $``\zeta=0.35``$) gav **acc ≈ 32 %** men långsam **ACF-decay** → hög autokorrelation.  
+- 2D-densitet: HMC återger en jämn, cirkulär posterior; MH visar ojämn täckning.
+
 
 ---
 
