@@ -24,7 +24,7 @@ Projektet genomfördes i samarbete med **If Insurance** och syftade till att byg
   - Likelihood-ratio-test
   - AIC-värden
 
-###Tariffgrupperingar och vilka som behölls i den reducerade modellen illustreras nedan
+### Tariffgrupperingar och vilka som behölls i den reducerade modellen illustreras nedan
 ---
 | **Tariffgrupp** | **Beskrivning** | **Kategorier** | **Inkluderad i reducerad modell** |
 |-----------------|-----------------|----------------|:--------------------------------:|
