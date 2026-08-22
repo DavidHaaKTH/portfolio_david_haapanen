@@ -1,43 +1,51 @@
 # David Haapanen
-### Masterstudent i Tillämpad Matematik & Data Science @ KTH
+### Civilingenjör i Maskinteknik | Tillämpad Matematik & Data Science | KTH
 
 Välkommen till min projektportfölj!  
-Här finns utvalda kurs- och examensprojekt som jag genomfört under min civilingenjörsutbildning på KTH.  
-Fokus ligger på **maskininlärning, probabilistisk modellering och industriell optimering** — med tillämpningar som spänner från energi- och avfallsanalys till medicinteknik och beslutsstöd.
+Här finns ett urval av kurs- och examensprojekt som jag genomfört under min civilingenjörsutbildning på KTH.  
 
-Varje projekt innehåller en kort beskrivning av syfte, metod, lärdomar och min egen roll.
+Fokus ligger på **maskininlärning, statistisk och probabilistisk modellering samt optimering** – med tillämpningar som sträcker sig från medicinteknik och fysiologiska tidsserier till försäkringsmodellering, energi- och avfallsanalys samt industriell optimering.
+
+Varje projekt innehåller en kort beskrivning av syfte, metod, resultat, lärdomar och min egen roll.
 
 ---
 
 ## Projektöversikt
 
-Nedanför är utvalda projekt som visar min erfarenhet av **maskininlärning, riskanalys och optimering**, både i kursform och i samarbete med industriella aktörer.
+Nedan finns ett urval av projekt som visar min erfarenhet av **maskininlärning, statistisk modellering, dataanalys och optimering**, både i kursform och i samarbete med industriella aktörer.
 
 | Projekt | Kort beskrivning |
 |----------|------------------|
-| [**ANN** - *Prediction of Waste Generation in the EU*](./kex-ann-mlr) | Examensarbete (BSc). Jämförde ANN och MLR för att prognostisera återvinnings energi från avfall i EU. |
-| [**GLM** - *Insurance Pricing Model (If Insurance)*](./insurance-pricing-glm) | Prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
-| [**Classification with ML** - *Heart Failure*](./heart-failure-ml) | Maskininlärningsprojekt – pipeline för att förutsäga hjärtsvikt via flera klassificeringsmodeller. |
-| [**Optimization** - *Allocation of Aircraft Spare Parts*](./system-engineering-lp) | Optimeringsmodell (MA + DP) för reservdelsallokering och kostnads–nytta-analys. |
-| [**MCMC and HMC** - *Bayesian Inference*](./mcmc-hmc) | Implementering av Monte Carlo metoder för att ta fram posterior fördelningar |
-| [**SMC** - *Mobility Tracking*](./smc-particle-filter) | Sekventiell spårning av fordon |
-| [**Regression Analysis** - *BMI prediction*](./regression-bmi) | Klassisk regressionsanalys i R med diagnostik och modellval. |
+| [**Examensarbete** – *ROCKET-Based Time-Series Classification for Edi Catheter Positioning in Neonates*](./master-thesis-edi-classification) | Utveckling och utvärdering av en ML-pipeline för klassificering av fysiologiska tidsserier och bedömning av Edi-kateterposition, i samarbete med Getinge. |
+| [**ANN** – *Prediction of Waste Generation in the EU*](./kex-ann-mlr) | Kandidatexamensarbete. Jämförde ANN och MLR för att prognostisera avfallsgenerering och potentiell energiåtervinning i EU. |
+| [**GLM** – *Insurance Pricing Model (If Insurance)*](./insurance-pricing-glm) | Utveckling av en prissättningsmodell för företagsreseförsäkringar med GLM i samarbete med If Insurance. |
+| [**Classification with ML** – *Heart Failure*](./heart-failure-ml) | Utveckling och jämförelse av flera klassificeringsmodeller för prediktion av hjärtsvikt. |
+| [**Optimization** – *Allocation of Aircraft Spare Parts*](./system-engineering-lp) | Optimeringsmodell med Marginal Allocation och Dynamic Programming för reservdelsallokering och kostnads–nytta-analys. |
+| [**MCMC and HMC** – *Bayesian Inference*](./mcmc-hmc) | Implementering och jämförelse av Monte Carlo-metoder för sampling från posteriorfördelningar. |
+| [**SMC** – *Mobility Tracking*](./smc-particle-filter) | Sequential Monte Carlo och partikelfiltrering för sekventiell spårning av fordon. |
+| [**Regression Analysis** – *BMI Prediction*](./regression-bmi) | Klassisk regressionsanalys i R med diagnostik, statistisk inferens och modellval. |
 
 ---
+
 ## Metoder och tekniker
-Projekten innefattar tillämpning av matematik, statistik och datavetenskap.  
-Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
+
+Projekten innefattar tillämpningar av matematik, statistik, programmering och data science på både akademiska och praktiska problem.
 
 ### 🔹 Maskininlärning
-- Supervised learning: regressionsmodeller, klassificering, neurala nätverk (ANN)
-- Ensemble-metoder: Random Forest, AdaBoost
-- Model selection och cross-validation
+- Supervised learning: regression, klassificering och neurala nätverk (ANN)
+- Tidsserieklassificering och feature extraction med MiniROCKET
+- Ensemble-metoder: Random Forest och AdaBoost
+- Model selection, regularisering och cross-validation
 - Feature engineering och dimensionalitetsreduktion (PCA)
 
-### 🔹 Statistisk modellering
+### 🔹 Statistisk och probabilistisk modellering
 - Generalized Linear Models (GLM)
-- Hypotestestning och konfidensintervall
-- Multikollinearitetsanalys (VIF)
+- Regressionsanalys och statistisk inferens
+- Bayesiansk inferens
+- Markov Chain Monte Carlo (MCMC)
+- Hamiltonian Monte Carlo (HMC)
+- Sequential Monte Carlo (SMC)
+- Hypotestning och konfidensintervall
 
 ### 🔹 Optimering och beslutsanalys
 - Marginal Allocation och Dynamic Programming
@@ -45,21 +53,25 @@ Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
 - Trade-off-analys mellan prestanda och kostnad
 - Modellering av resursallokering och systemoptimering
 
-### 🔹 Numerisk analys och simulering
-- Monte Carlo-simuleringar (SMC, MCMC)
-- Approximation och stokastisk modellering
+### 🔹 Dataanalys och modellutvärdering
+- Bearbetning och analys av multivariata tidsserier
+- Cross-validation och patientbaserad modellutvärdering
+- Generaliseringsanalys mellan olika datadomäner
+- Preprocessing och explorativ dataanalys
+- Utvärdering av klassificerings- och regressionsmodeller
 
 ---
 
-💻 **Programmeringsspråk och verktyg**
+## 💻 Programmeringsspråk och verktyg
+
 - **Python**, **MATLAB**, **R**, **C**
-- Bibliotek: `scikit-learn`, `NumPy`, `pandas`, `matplotlib`
+- Bibliotek: `scikit-learn`, `PyTorch`, `NumPy`, `pandas`, `matplotlib`
 - Versionshantering: **Git**, **GitHub**
 - Övrigt: **Excel**, **Solid Edge**, **COMSOL**, **ANSYS**
 
-  
 ---
 
-**Kontakt**
+## Kontakt
+
 - [LinkedIn](https://www.linkedin.com/in/david-haapanen-b48b47211)
 - [E-post](mailto:david.haapanen01@gmail.com)
