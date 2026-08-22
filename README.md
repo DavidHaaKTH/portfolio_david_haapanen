@@ -62,4 +62,4 @@ Nedan listas de huvudsakliga metoder och tekniker jag tillämpat i mina projekt:
 
 **Kontakt**
 - [LinkedIn](https://www.linkedin.com/in/david-haapanen-b48b47211)
-- [E-post](mailto:avid.haapanen01@gmail.com)
+- [E-post](mailto:david.haapanen01@gmail.com)
