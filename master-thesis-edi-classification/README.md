@@ -2,7 +2,7 @@
 
 **Typ:** Examensarbete inom tillämpad matematik (KTH, 2026)  
 **Samarbete:** Getinge  
-**Roll:** Självständigt examensarbete – utveckling, implementation och utvärdering av ett ramverk för tidsserieklassificering och bedömning av Edi-kateterposition.
+**Roll:** Självständigt examensarbete – utveckling, implementation och utvärdering av ett ramverk för tidsserieklassificering och bedömning av Edi-kateterposition hos neonatal och vuxna patienter.
 
 **Språk:** Python  
 
