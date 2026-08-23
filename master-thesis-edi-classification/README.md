@@ -2,7 +2,7 @@
 
 **Typ:** Examensarbete inom tillämpad matematik (KTH, 2026)  
 **Samarbete:** Getinge  
-**Roll:** Självständigt examensarbete – utveckling, implementation och utvärdering av ett ramverk för tidsserieklassificering och bedömning av Edi-kateterposition hos neonatal och vuxna patienter.
+**Roll:** Självständigt examensarbete – utveckling, implementation och utvärdering av ett ramverk för tidsserieklassificering och bedömning av Edi-kateterposition, med analys av generalisering mellan neonatala och vuxna patientpopulationer.
 
 **Språk:** Python och MATLAB
 
@@ -14,7 +14,7 @@ Examensarbetet undersökte hur **maskininlärning och tidsserieklassificering** 
 
 Edi-katetrar används bland annat för att mäta diafragmans elektriska aktivitet vid respiratorisk övervakning och ventilatorbehandling. Korrekt positionering är därför viktig, samtidigt som bedömningen kan försvåras av exempelvis variationer i fysiologiska signaler och patientrörelser.
 
-Projektets mål var att utveckla och utvärdera ett ramverk som kombinerade **god klassificeringsprestanda, beräkningseffektivitet och robusthet** i samband under begränsad tillgång till klinisk data.
+Projektets mål var att utveckla och utvärdera ett ramverk som kombinerade **god klassificeringsprestanda, beräkningseffektivitet och robusthet** under begränsad tillgång till klinisk data.
 
 ---
 
@@ -24,7 +24,7 @@ Jag utvecklade en Python-baserad pipeline för bearbetning och klassificering av
 
 Arbetet omfattade bland annat:
 
-- Bearbetning av multivariata Edi-härledda fysiologiska signaler till hjärtslagscentrerade tidsseriesegment.
+- Bearbetning och annotering av multivariata Edi-härledda fysiologiska signaler med **MATLAB och Python**, inklusive framtagning av hjärtslagscentrerade tidsseriesegment för vidare modellering.
 - Feature extraction med **MiniROCKET** och utvärdering av **Detach-ROCKET**.
 - Utvärdering av flera klassificeringsmetoder, däribland Ridge Classification, Multinomial Logistic Regression (MLR) och Support Vector Machines (SVM).
 - Systematisk utvärdering av feature-dimension, regularisering, sampling och class balancing.
@@ -32,7 +32,7 @@ Arbetet omfattade bland annat:
 - Cross-domain-experiment mellan neonatala och vuxna patientpopulationer för att undersöka modellernas överförbarhet.
 - Analys av avvägningen mellan klassificeringsprestanda, robusthet och beräkningskostnad.
 
-Den slutliga lösningen använde ett tvåstegsramverk. Först klassificerade maskininlärnings-modellen lokala elektrodgrupper som **för högt**, **välpositionerade** eller **för lågt**. Dessa prediktioner kombinerades därefter i ett deterministiskt inferensramverk för att uppskatta kateterns övergripande position och dess förändring över tid.
+Den slutliga lösningen använde ett tvåstegsramverk. Först klassificerade ML-modellen lokala elektrodgrupper som **för högt**, **välpositionerade** eller **för lågt**. Dessa prediktioner kombinerades därefter i ett deterministiskt inferensramverk för att uppskatta kateterns övergripande position och dess förändring över tid.
 
 ---
 
@@ -46,9 +46,9 @@ Den slutliga MiniROCKET-baserade modellen uppnådde på ett separat neonatalt te
 | Macro F1-score | **0.8492** |
 | Weighted F1-score | **0.8558** |
 
-MiniROCKET i samband med Ridge Classification gav den mest fördelaktiga balansen mellan **klassificeringsprestanda, generalisering och beräkningseffektivitet** av de undersökta metoderna.
+MiniROCKET i kombination med Ridge Classification gav den mest fördelaktiga balansen mellan **klassificeringsprestanda, generalisering och beräkningseffektivitet** av de undersökta metoderna.
 
-Analysen visade samtidigt betydande variation mellan enskilda patienter och begränsad överförbarhet mellan neonatala och vuxna patientpopulationer. Resultaten underströk därför vikten av patientbaserad validering och analys av generalisering vid utveckling av maskininlärnings modeller för kliniska data.
+Analysen visade samtidigt betydande variation mellan enskilda patienter och begränsad överförbarhet mellan neonatala och vuxna patientpopulationer. Resultaten underströk därför vikten av patientbaserad validering och analys av generalisering vid utveckling av ML-modeller för kliniska data.
 
 ---
 
