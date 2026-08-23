@@ -46,9 +46,9 @@ Den slutliga MiniROCKET-baserade modellen uppnådde på ett separat neonatalt te
 | Macro F1-score | **0.8492** |
 | Weighted F1-score | **0.8558** |
 
-MiniROCKET gav den mest fördelaktiga balansen mellan **klassificeringsprestanda, generalisering och beräkningseffektivitet** av de undersökta metoderna.
+MiniROCKET i samband med Ridge Classification gav den mest fördelaktiga balansen mellan **klassificeringsprestanda, generalisering och beräkningseffektivitet** av de undersökta metoderna.
 
-Analysen visade samtidigt betydande variation mellan enskilda patienter och begränsad överförbarhet mellan neonatala och vuxna patientpopulationer. Resultaten underströk därför vikten av patientbaserad validering och analys av generalisering vid utveckling av ML-modeller för kliniska data.
+Analysen visade samtidigt betydande variation mellan enskilda patienter och begränsad överförbarhet mellan neonatala och vuxna patientpopulationer. Resultaten underströk därför vikten av patientbaserad validering och analys av generalisering vid utveckling av maskininlärnings modeller för kliniska data.
 
 ---
 
@@ -66,6 +66,7 @@ Analysen visade samtidigt betydande variation mellan enskilda patienter och begr
 ## Teknik och verktyg
 
 - **Python**
+- **MATLAB**
 - **Machine Learning & Time-Series Classification**
 - **MiniROCKET & Detach-ROCKET**
 - **scikit-learn**, **PyTorch**, **NumPy**, **pandas**, **matplotlib**
