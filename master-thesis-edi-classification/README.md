@@ -79,5 +79,4 @@ Analysen visade samtidigt betydande variation mellan enskilda patienter och begr
 
 Examensarbetet genomfördes i samarbete med **Getinge**. Dataset, källkod och internt material är proprietärt och publiceras därför inte i detta repository.
 
-[Hela examensrapporten](./Final_Report_David_Haapanen.pdf)
 📄 Rapporten kommer att länkas här efter publicering i KTH:s DiVA-databas.
