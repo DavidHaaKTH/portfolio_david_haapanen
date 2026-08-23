@@ -14,7 +14,7 @@ Examensarbetet undersökte hur **maskininlärning och tidsserieklassificering** 
 
 Edi-katetrar används bland annat för att mäta diafragmans elektriska aktivitet vid respiratorisk övervakning och ventilatorbehandling. Korrekt positionering är därför viktig, samtidigt som bedömningen kan försvåras av exempelvis variationer i fysiologiska signaler och patientrörelser.
 
-Projektets mål var att utveckla och utvärdera ett ramverk som kombinerade **god klassificeringsprestanda, beräkningseffektivitet och robusthet**, även under begränsad tillgång till klinisk data.
+Projektets mål var att utveckla och utvärdera ett ramverk som kombinerade **god klassificeringsprestanda, beräkningseffektivitet och robusthet** i samband under begränsad tillgång till klinisk data.
 
 ---
 
@@ -26,13 +26,13 @@ Arbetet omfattade bland annat:
 
 - Bearbetning av multivariata Edi-härledda fysiologiska signaler till hjärtslagscentrerade tidsseriesegment.
 - Feature extraction med **MiniROCKET** och utvärdering av **Detach-ROCKET**.
-- Utvärdering av flera klassificeringsmetoder, däribland Ridge Classification, Multinomial Logistic Regression och Support Vector Machines.
+- Utvärdering av flera klassificeringsmetoder, däribland Ridge Classification, Multinomial Logistic Regression (MLR) och Support Vector Machines (SVM).
 - Systematisk utvärdering av feature-dimension, regularisering, sampling och class balancing.
 - Patientbaserad Cross-Validation och Leave-One-Out Cross-Validation för att undersöka generalisering till tidigare osedda patienter.
 - Cross-domain-experiment mellan neonatala och vuxna patientpopulationer för att undersöka modellernas överförbarhet.
 - Analys av avvägningen mellan klassificeringsprestanda, robusthet och beräkningskostnad.
 
-Den slutliga lösningen använde ett tvåstegsramverk. Först klassificerade ML-modellen lokala elektrodgrupper som **för högt**, **välpositionerade** eller **för lågt**. Dessa prediktioner kombinerades därefter i ett deterministiskt inferensramverk för att uppskatta kateterns övergripande position och dess förändring över tid.
+Den slutliga lösningen använde ett tvåstegsramverk. Först klassificerade maskininlärnings-modellen lokala elektrodgrupper som **för högt**, **välpositionerade** eller **för lågt**. Dessa prediktioner kombinerades därefter i ett deterministiskt inferensramverk för att uppskatta kateterns övergripande position och dess förändring över tid.
 
 ---
 
