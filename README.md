@@ -1,5 +1,5 @@
 # David Haapanen
-### Civilingenjör i Maskinteknik | Tillämpad Matematik & Data Science | KTH
+### Civilingenjör | Tillämpad Matematik & Data Science | KTH
 
 Välkommen till min projektportfölj!  
 Här finns ett urval av kurs- och examensprojekt som jag genomfört under min civilingenjörsutbildning på KTH.  
